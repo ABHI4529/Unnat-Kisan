@@ -1,0 +1,264 @@
+{
+  "crops": [
+    {
+      "crop_name": "Rice",
+      "crop_imageUrl": "https://www.apnikheti.com/upload/crops/5431idea99rice1.JPG",
+      "crop_description": "Rice is the most important food crop of India covering about one-fourth of the total cropped area and providing food to about half of the Indian population.Rice crop needs a hot and humid climate. It is best suited to regions which have high humidity, prolonged sunshine and an assured supply of water.It can be grown on a variety of soils with low permeability and pH varying from 5.0 to 9.5.A rice paddy needs to hold water well. Ideally, soil needs to include about 50% clay content. Also, soil underlain with an impervious hardpan or clay-pan helps to hold water",
+      "crop_soil": [
+        {
+          "soil_name": "Silt clay, silt clay loam ",
+          "soil_description": "Rice is a tropical plant that requires plenty of water to grow well. Therefore, the soil which is utilized in growing rice should have a good water retaining capacity. Silt clay, silt clay loam and clay are some of the texture of the soil which is best for cultivating rice .It can also withstand alkaline as well as acid soils.Fertile riverine alluvial soil and the clayey loam texture of the new alluvial soil is the most suitable for rice cultivation.It is easily tillable and abundant in minerals, particularly potash and lime"
+        }
+      ],
+      "crop_diseases": [
+        {
+          "disease_name": "Khaira disease of rice",
+          "disease_description": "Khaira disease of rice is caused by the deficiency of zinc. Khaira disease of rice is a physiological disorder. In this disease, the lower leaves of the plants start turning yellow and after that, brown spots appear on the leaves. In case of severe outbreak of the disease, the leaves start drying. Plant growth is stunted and tillering is reduced. Symptoms of khaira disease are seen more in high yielding varieties of paddy.",
+          "disease_cure": "To avoid the problem of this disease, 25 kg zinc sulfate per hectare should be applied before transplanting at the time of preparation of the field.For the control of Khaira disease, spraying of 5 kg Zinc Sulfate and 2.5 kg Lime in 600-700 liters of water per hectare should be done when the initial symptoms of the disease appear.If the disease is still not under control, then 10 days after the first spray, the second spray should be done at the same rate."
+        },
+        {
+          "disease_name": "Bacterial leaf blight ",
+          "disease_description": "In this disease, long dry lesions begin to form from the tip of the leaf and move towards the central part of the leaf through the edge.Wavy spots appear on the edges of the leaves.In case of severe infestation of the disease, the entire leaf dries up",
+          "disease_cure": "For the control of bacterial leaf blight, spray 75 grams of Agrimycin-100 and 500 grams of copper oxychloride in 700-800 liters of water per hectare.If Agrimycin-100 is not available, 100 g streptocycline can be used instead"
+        },
+        {
+          "disease_name": "Tungro disease",
+          "disease_description": "Tungro disease of rice is caused by viruses called Rice tungro bacilliform virus RTBV and Rice tungro spherical virus RTSV.Where green leafhoppers are responsible for transmitting most diseases. Tungro disease affects the crop at all stages of growth but most commonly at the stage of vegetative growth.The growth of the plants affected by the disease is stunted and tillerings are also reduced.Older leaves begin to turn orange-yellow at the tips and extend down to the lower leaf portion.Flowering is delayed and small and weak panicles are also formed, which are dark brown in color.",
+          "disease_cure": "Spray Thiamethoxam 25 WDG 100g/ha or Imidacloprid 17.8 SL 100ml/ha at 15 and 30 days after transplanting of paddy.Spray insecticide on the weeds of the bunds as well.To reduce the yellowing of leaves caused by disease,spraying can be done by mixing 2% urea solution with Mancozeb 2.5 g/liter solution."
+        },
+        {
+          "disease_name": "Rice Blast",
+          "disease_description": "Rice blast is caused by a fungus called Magnaporthe grisea. Rice blast disease is also known as rotten neck and rice fever. This disease was first recorded in India in the year 1918. This disease is found in about 80 rice growing countries. In case of severe infestation of this disease, crop loss can be up to 70-80%.The disease affects the leaves, nodes and neck (base of the panicle) of the plant but the symptoms of the disease are more clearly visible on the leaves.",
+          "disease_cure": "Use balanced amount of fertilizers, avoid excess Nitrogen.Sow disease-resistant varieties like IR-64, Pusa Basmati-1637, Pankaj, Jamuna, and Pantadhan-10.Seed should be sown after treating with Carbendazim 50% WP @ 2g/kg of seed.Spray the following chemicals when symptoms of the disease appear.Carbendazim 50 wp @500g/ha Or Tricyclazole 75 wp @500g/ha."
+        }
+      ]
+    },
+    {
+      "crop_name": "Cotton",
+      "crop_imageUrl": "https://ethicallysustained.files.wordpress.com/2013/05/cotton_bolls_7.jpg",
+      "crop_description": "Cotton is one of the most important fiber and cash crop of India and plays adominant role in the industrial and agricultural economy of the country. It provides the basic raw material (cotton fibre) to cotton textile industry. Cotton in India provides direct livelihood to 6 million farmers and about 40 -50 million people are employed in cotton trade and its processing. ",
+      "crop_soil": [
+        {
+          "soil_name": "Black soil",
+          "soil_description": "Laterite soil, which is rich in calcium and potash, is suitable for growing cotton. These soils were created as a result of the lava that was distributed across a sizable region during the Deccan Plateau's volcanic activity weathering. Black soil's clayey characteristics make it ideal for growing cotton crops."
+        }
+      ],
+      "crop_diseases": [
+        {
+          "disease_name": "Root rot",
+          "disease_description": "3 types of symptoms caused by the pathogen – Seedling disease, sore shin and root rot.Seedling stage- Germinated seedling affected by the fungus shows black lesions on hypocotyl Causes girdling of stem and death of affected seedling.Sore shin stage-Dark reddish-brown canker appears on stem near soil surface, later turning black.Drying of leaves and entire plant due to plant breakage at the collar region.Root rot-Bark of affected plant shreds and may extend above ground level.Dark brown sclerotia appears on the wood or on the shredded bark.Entire root system becomes rotted, plants dry and can be easily pulled out ",
+          "disease_cure": "Vitavax powder 75% Fungicide \tCarboxin 37.5% + Thiram 37.5% DS Seed treatment : 3 gm/kg seed.Dhanustin Fungicide \tCarbendazim 50% WP \tDrenching: 0.5 - 0.75 gm/lit water."
+        },
+        {
+          "disease_name": "Fusarium Wilt",
+          "disease_description": "Initially the symptoms appear as yellowing and browning of cotyledons and the base of petiole shows brown ring.It is followed by wilting and drying of the affected seedlings.Affected plant’s leaves loses turgidity, gradually turns brown, droops and finally drops off.Tap roots are usually stunted with a smaller number of lateral roots. ",
+          "disease_cure": "Beneficial Lyophilized Microbes Consortia: 1.5 % \tMix 25-50 gm/lit of water and keep it in shade for 3-5 hr. Then mix it in 200 lit of water.Carbendazim 50% DF.Soil drenching: 2 gm/lit water "
+        },
+        {
+          "disease_name": "Verticillium Wilt",
+          "disease_description": "It affects the crop in square and boll formation stages.Bronzing of veins followed by interveinal chlorosis, yellowing and scorching of leaves.Leaves exhibit drying of leaf margins and areas between veins",
+          "disease_cure": "Treat the delinted seeds with Carboxin or Carbendazim at 4 g/kg.Remove and destroy the infected plant debris after deep ploughing in summer months (June-July).Apply heavy doses of farm yard manure or compost at 100t/ha.Follow crop rotation every 2 or 3 years. "
+        }
+      ]
+    },
+    {
+      "crop_name": "Potato",
+      "crop_imageUrl": "https://www.thespruce.com/thmb/hb-0fEZSX6MWNfMu-Zh0Qizy45g=/3456x2298/filters:no_upscale():max_bytes(150000):strip_icc()/fresh-potatoes----91383674-5b1df6bffa6bcc0036a66be4.jpg",
+      "crop_description": "Potato is the most important food crop of the world. Potato is a temperate crop grown under subtropical conditions in India. Potatoes are used for several industrial purposes such as for the production of starch and alcohol. Potato starch (farina) is used in laundries and for sizing yarn in textile mills.Potato is grown almost in all states of India. However, the major potato rowing states are Himachal Pradesh, Punjab, Uttar Pradesh, Madhya Pradesh, Gujarat, Maharashtra, Karnataka, West Bengal, Bihar and Assam.Potato is grown in India under diverse agro climatic conditions.The varieties should make the best use of the agro climatic conditions and give high yield.The growing season in the northern hills is the kharif season with long days.  The crop experiences water stress during the emergence and initial growth phase while during the maximum bulking phase it is invariably exposed to late blight infection.Potato is a temperate climate crop, however it grows under a diverse range of climatic conditions. It is grown only under such conditions where the temperature during the growing seasons is moderately cool. The vegetative growth of the plant is best at a temperature of 24°C while tuber development is favored at 20°C",
+      "crop_soil": [
+        {
+          "soil_name": "any type of soil except saline and alkaline soils",
+          "soil_description": "Soils, which are naturally loose, offer least resistance to the enlargement of the tubers is preferred. Loamy and sandy loam soils, rich in organic matter with good drainage and aeration are most suitable for cultivation of potato crop. The soil with pH range of 5.2-6.4 is considered to be ideal."
+        }
+      ],
+      "crop_diseases": [
+        {
+          "disease_name": "Bacterial wilt",
+          "disease_description": "pathogen also damages plants such as chili, tomato, tobacco and egg plant, as well as several species of weeds.The symptoms of bacterial wilt infection can be seen on all parts of infected plants.Infected plant begins to wilt, starting from the tips of the leaves or where the stems branch out, and then spreading to all parts of the plant.Leaves become yellow at their bases, then the whole plant wilts and dies. When stems are cut a brown colored ring will be visible.When a tuber is cut in half, black or brown rings will, however, be visible. If left for a while or squeezed, these rings will exude a thick white fluid.",
+          "disease_cure": "Bacterial wilt pathogen can survive in soil (without a host for several seasons), water, seed tubers, potato plant remnants.The disease can spread from field to field or from plant to plant within field via infected seed, air, water, soil, farming tools, livestock and people.High temperature, soil moisture, low pH.The disease spread rapidly in the warmer temperatures in storage areas. Infected seed can also be a source of the disease in the field.Bacterial wilt can be controlled by exposing the seed tubers to hot air (112 ºF) with 75% relative humidity for 30 min."
+        },
+        {
+          "disease_name": "Septoria leaf spot",
+          "disease_description": "Less vigorous plants are usually affected.Small, round to irregular spots with a grey center and dark margin on leaves.Spots usually start on lower leaves and gradually advance upwards.At later stage spots coalesce and leaves are blighted.Complete defoliation of affected leaves may take place.Stems and flowers are sometimes attacked.Fruits are rarely attacked.",
+          "disease_cure": "Fungicide fentin is proven to be effective in controlling Septoria. In addition, biological controls such as copper sulfate can be integrated with other fungicides to further control the spread of disease by preventing germination of the pycnidia.Poor vigour of plants due to nutrient deficiency in late season.High humidity or persistent dew at 25 ºC.Moist weather with intermittent showers."
+        },
+        {
+          "disease_name": "Late blight",
+          "disease_description": "This disease damages leaves, stems and tubers. Affected leaves appear blistered as if scalded by hot water and eventually rot and dry out.When drying out, leaves turn brown or black in color. When infections are still active, spots appear on the underside of leaves blanketed in what looks like flour.Affected stems begin to blacken from their tips, and eventually dry out.Severe infections cause all foliage to rot, dry out and fall to the ground, stems to dry out and plants to die.Affected tubers display dry brown-colored spots on their skins and flesh. This disease acts very quickly. If it is not controlled, infected plants will die within two or three days.",
+          "disease_cure": "Favourable condition-High humidity.Low temperature and leaf wetness."
+        },
+        {
+          "disease_name": "Common Scab",
+          "disease_description": "Pathogen infects young developing tubers through the lenticels and occasionally through wounds.Symptoms of common potato scab are quite variable and are manifested on the surface of the potato tuber. The disease forms several types of cork-like lesions including surface.Damaged tubers have rough, cracked skin, with scab-like spots. Severe infections leave potato skins covered with rough black welts.Initial infections result in superficial reddish-brown spots on the surface of tubers. As the tubers grow, lesions expand, becoming corky and necrotic.",
+          "disease_cure": "Disease is common in fields with low soil pH favoured by high soil moisture. Disease problems may be aggravated by excessive irrigation."
+        }
+      ]
+    },
+    {
+      "crop_name": "Wheat",
+      "crop_imageUrl": "https://4.bp.blogspot.com/-12HPxjByUV4/V8RViLMnh8I/AAAAAAAAAVQ/HuNtX5JaT1sMYHANVus_ecfN_q1g0YAAwCLcB/s1600/IMG_3942.JPG",
+      "crop_description": "Wheat is the main cereal crop in India. The total area under the crop is about 29.8 million hectares in the country.Higher area coverage is reported from MP in recent years.Indian wheat is largely a soft/medium hard, medium protein, white bread wheat, somewhat similar to U.S. hard white wheat. ",
+      "crop_soil": [
+        {
+          "soil_name": "Loamy soil is a mixture of sand, clay and silt particles",
+          "soil_description": "It consists of additional organic matter and is very fertile compared to other soils. It provides ideal nutrients which are required for growing wheat and also allows the roots of the plant to rapidly absorb water and air from the soil."
+        }
+      ],
+      "crop_diseases": [
+        {
+          "disease_name": "Powdery  Mildew",
+          "disease_description": "Powdery mildew can easily be diagnosed by the white, powdery patches that form on the upper surface of leaves and stem.Greyish white powdery growth appears on the leaf, sheath, stem and floral parts.Powdery growth later become black lesion and cause drying of leaves and other parts.",
+          "disease_cure": "The disease infects plants during periods of high humidity (not necessarily rain) and cool to moderate temperatures (20-21°C)."
+        },
+        {
+          "disease_name": "Loose Smut",
+          "disease_description": "t is a seed borne disease; infection occurs during Loose Smut flowering through wind-borne spores.The infection remains dormant inside the otherwise healthy looking seed but the plants grown from such seeds bear infected inflorescence.At this time, infected heads emerge earlier than normal heads. The entire inflorescence is commonly affected and appears as a mass of olive-black spores, initially covered by a thin gray membrane.",
+          "disease_cure": "Infection is favored by cool, humid conditions during flowering period of the host plant."
+        },
+        {
+          "disease_name": "Brown Rust",
+          "disease_description": "The most common site for symptoms is on upper leaf blades, however, sheaths, glumes and awns may occasionally become infected and exhibit symptoms.The pustules are circular or slightly elliptical, smaller than those of stem rust, usually do not coalesce, and contain masses of orange to orange-brown Urediospores.",
+          "disease_cure": "Temperatures of 20-25° C with free moisture (rain or dew) cause epidemics. Severe infection causes upto 30 percent yield losses."
+        }
+      ]
+    },
+    {
+      "crop_name": "Maize(Corn)",
+      "crop_imageUrl": "https://www.thespruce.com/thmb/BbKYUfi4BE4KiKFtssElKt1LVfs=/2000x1333/filters:fill(auto,1)/fresh_corn-583dfbd65f9b58d5b170c933.jpg",
+      "crop_description": "Maize is a staple food for almost half the population of Sub-Saharan Africa and is important for its carbohydrate, proteins, iron, vitamin B, and minerals. The produce is consumed as maize meal (ugali), porridge, pastes, and beer, and can be boiled or roasted as fresh as it comes from the farm. Maize is also processed to produce oils for cooking. It is also an important crop for animal feed.",
+      "crop_soil": [
+        {
+          "soil_name": "Alluvial soil",
+          "soil_description": "Alluvial soil is one of the best soils, requiring the least water due to its high porosity. The consistency of alluvial soil ranges from drift sand and rich, loamy soil to silt clays. India is one of the richest countries in the world in terms of alluvial soil, which covers more than 46% of its total land area."
+        },
+        {
+          "soil_name": "silt Soil",
+          "soil_description": "Silt soils, comprised mainly of intermediate sized particles, are fertile, fairly well drained and hold more moisture than sandy soils, but are easily compacted. Loams are comprised of a mixture of clay, sand and silt that avoid the extremes of clay or sandy soils and are fertile, well-drained and easily worked."
+        }
+      ],
+      "crop_diseases": [
+        {
+          "disease_name": "Giberrella stalk and ear rot",
+          "disease_description": "Plants wilting and leaves changing color from light to dull green; lower stalk turns straw yellow; internal stalk tissue breaks down; interior of stalk has a red discoloration; black fungal fruiting bodies may be visible on the stalk, often at internodes, and can be easily scraped off; if fungal infection affects the ears, it produces a red mold at the tips of the ear which spreads down; early infection may result in the ear being covered in pink mycelium which causes the corn husk to adhere to the ear.",
+          "disease_cure": "Stressed plants are more susceptible to Gibberella - providing adequate fertilization and irrigation can help reduce incidence of disease; control insects, especially stem and ear borers; hybrids differ in their susceptibility to the disease and further information is required in order to develop specific control measures."
+        },
+        {
+          "disease_name": "Bacterial stalk rot/soft rot",
+          "disease_description": "Plants suddenly beginning to lodge (bend to lie along the ground) midway through season; one or more internodes above soil line turning brown, water-soaked, soft and slimy; tissue has foul odor and mushy appearance.",
+          "disease_cure": "Plow all crop debris into soil in Fall; plant corn in well-draining soil to prevent waterlogged plants."
+        },
+        {
+          "disease_name": "Corn earworm ",
+          "disease_description": "Feeding damage to leaves, tassel and leaf whorls; preferred feeding site is the ear and insect produces extensive excrement at the tip of the ear; younger larvae feed on silks, severing them from the plant; young caterpillars are cream-white in color with a black head and black hairs; older larvae may be yellow-green to almost black in color with fine white lines along their body and black spots at the base of hairs; eggs are laid singly on both upper and lower leaf surfaces and are initially creamy white but develop a brown-red ring after 24 hours and darken prior to hatching.",
+          "disease_cure": "Corn earworms are most problematic on sweet corn varieties and treatment should be applied at egg hatch; monitor plants for eggs and young larvae and also natural enemies that could be damaged by chemicals; Bacillus thuringiensis or Entrust SC may be applied to control insects on organically grown plants; appropriate chemical treatment may be required for control in commercial plantations."
+        },
+        {
+          "disease_name": "Spider mites  ",
+          "disease_description": "Leaves stippled with yellow; leaves may appear bronzed; webbing on underside of leaves; small kernel size; mites may be visible as tiny moving dots on the webs or underside of leaves, best viewed using a hand lens; usually not spotted until there are visible symptoms on the plant; leaves turn yellow and may drop from plant.",
+          "disease_cure": "In the home garden, spraying plants with a strong jet of water can help reduce buildup of spider mite populations; if mites become problematic apply insecticidal soap to plants; certain chemical insecticides may actually increase mite populations by killing off natural enemies and promoting mite reproduction."
+        }
+      ]
+    },
+    {
+      "crop_name": "Tur",
+      "crop_imageUrl": "https://wp-public-fs.s3.ap-south-1.amazonaws.com/tasks/15ec7bfa0a1e82fa596ecc3ec5aad017fae4c6a739023c/images/arhar%20dal-5ecad52ea183a.png",
+      "crop_description": "Toor dal is the local name of pigeon peas. Toor dal has many different names in different parts of India. It is also called Arhar dal  in Hindi, Adhaki in Sanskrit, and Tur in Bengali. It is a fundamental part of Indian cooking and staple food among vegetarian families in India. Toor dal is a rich source of proteins and fibres while low in calories.",
+      "crop_soil": [
+        {
+          "soil_name": "Sandy Loamy Soil",
+          "soil_description": "Sandy Loamy Soil is the mixture of clay, sand and silt soil which consists of additional organic matter and is very fertile compared to other types of soil. It is well suited for cultivation as the plant roots get a sufficient amount of water and nutrients for their growth and development."
+        },
+        {
+          "soil_name": "Loamy Soil",
+          "soil_description": "Loamy soil is ideal for most garden plants because it holds plenty of moisture but also drains well so that sufficient air can reach the roots. Many gardeners complain of their garden soil being compacted and/or poorly drained. Heavy, compacted soil can be rescued by the enduring gardener."
+        }
+      ],
+      "crop_diseases": [
+        {
+          "disease_name": "Wilt",
+          "disease_description": "Xylem gradually develops black streaks, dark purple bands appear on the stem surface plants extending upwards from the base. Main stem of such plants is split open, intensive blackening of the xylem can be seen. In humid weather, a pinkish mycelial growth is commonly observed the basal portions of the wilted plants. It may be seen in seedling, flowering & vegetative stage.",
+          "disease_cure": "Uproot wilted plants,Grow resistant varieties like Amar, Azad, Asha (IPCL - 87119), Maruthi, C-11, BDN-1, BDN - 2, NP - 5, JKM - 189, C - 11, JKM - 7, BSMR - 853 & BSMR - 736 etc,Avoid over or under watering plants."
+        },
+        {
+          "disease_name": "Sterility mosaic disease",
+          "disease_description": "It is caused by mosaic virus & spread from plant to plant under field conditions through Eriophyid mite. Leaves become small and cluster near branch tips & reduced in size. Plants are pale green and bushy in appearance, without of flowers and pods. Diseas ed plants are usually in groups. It may be seen in Vegetative growth & Pre - flowers stage",
+          "disease_cure": "Spray Fenazaquin 10 EC (Magister) @ 1 ml/lit er of water on 45 and 60 DAS, Rogue out the infected plants in the early stages of growth, Grow resistant varieties like Pusa - 885, Asha, Sharad (DA11), Narendra Arhar1, Bahar , BSMR - 853, BSMR 736, Rajeev Lochan, BDN - 708."
+        },
+        {
+          "disease_name": "Phytophthora blight",
+          "disease_description": " Foliage blight symptoms are circular or irregular water soaked lesions on leaves. The lesions on stems and branches increases rapidly, girdles, cracks and dries the stem. Infected stem and branches break easily in the wind.",
+          "disease_cure": "Seed treated with Metalaxyl 35 WS @ 3 g/ kg of seed, Grow resistant varieties like ICPL 7916/ 12055/12114/12161, JKM - 189, JA - 4,Good drainage in the fields and the plants should be protected from stem injury, Crop rotation should be followed "
+        },
+        {
+          "disease_name": "Alternaria blight",
+          "disease_description": " Symptoms appear on all aerial part of plants are small, circular, necrotic spots that develop quickly, forming typical concentric rings. The spots are initially light brown and later turn dark brown. In severe infection, defoliation and drying of infected leaves, branches and flower buds.",
+          "disease_cure": "Spray the crop with Mancozeb 75 WP @ 2 g/liter or Carbendazim 50 WP @ 1g/liter of water, Grow resistant varieties like DA - 2, MA 128 - 1, MA 128 - 2, Cultivation of pigeonpea on ridges with proper drainage system and avoiding the sowing in heavy soil helpful in disease management;"
+        }
+      ]
+    },
+    {
+      "crop_name": "Jowar",
+      "crop_imageUrl": "https://media.vogue.in/wp-content/uploads/2016/04/1.Jowar_.jpg",
+      "crop_description": "Jowar is one of India's major cereal crops. India is the second-largest producer of jowar in the world. This crop is ideally suited for semi-arid agro climatic regions of the country and it gives reasonably good yield with minimal requirement of irrigation and fertilizers. The major jowar producing state is Maharashtra.Jowar occupies about 8% of the total area of the food grains and 10% of the cereals. Similarly its output is 4.1 % of the total production of food grains and 4.3% of the cereals in the country.",
+      "crop_soil": [
+        {
+          "soil_name": "Black Soil",
+          "soil_description": "Black cotton soil containing a small percentage of lime in a very powdered state is known as kali. In different places kali soil bears different names such as chikni meaning sticky soil, gaohari, wheat soil, etc. Black soil is also known as medium and deep soil. It is the richest soil in the district which is fine-grained and retentive of moisture"
+        },
+        {
+          "soil_name": "Morand Soil",
+          "soil_description": "When there is a higher percentage of lime than in the kali soil, present in the form of nodules about as large as peas, the black cotton soil is known as morand. It is the most predominant and the most common soil inasmuch as it occupies about 66 per cent of the cultivated area in the district. It is black and grey or dark to light brown in colour, its depth varying between 0.915 and 1.220 metres (3-4 feet) and 2.440 to 3.050 metres (8.10 feet). It is clayey in texture, the clay content being about 56 per cent. Its sand content (about 16 per cent) is much more than that of black soil."
+        }
+      ],
+      "crop_diseases": [
+        {
+          "disease_name": "Loose smut",
+          "disease_description": "The affected plants can be detected before the ears come out. They are shorter than the healthy plants with thinner stalks and marked tillering. The ears come out much earlier than the healthy. The glumes are hypertrophied and the earhead gives a loose appearance than healthy. The sorus is covered by a thin membrane which ruptures very early, exposing the spores even as the head emerges from the sheath.",
+          "disease_cure": "Azospirillum with 12.5 kg of FYM "
+        },
+        {
+          "disease_name": "Rust",
+          "disease_description": "Rust. The fungus affects the crop at all stages of growth. The first symptoms are small flecks on the lower leaves (purple, tan or red depending upon the cultivar). Pustules (uredosori) appear on both surfaces of leaf as purplish spots which rupture to release reddish powdery masses of uredospores.",
+          "disease_cure": "hexaconazole (0.1%), difenconazole "
+        },
+        {
+          "disease_name": "Ergot",
+          "disease_description": " disease is confined to individual spikelets. The first symptom is the secretion of honey dew from infected florets. Under favourable conditions, long, straight or curved, cream to light brown, hard sclerotia develop. .",
+          "disease_cure": " seeds with 5% salt solution  "
+        },
+        {
+          "disease_name": "Sorghum downy mildew",
+          "disease_description": "Key distinguishing symptoms include white downy growth on both surfaces of infected leaves and also shredding of the leaves. What should I look for? Look for chlorosis in seedlings or yellow-green to white stripes on leaves of older plants. .",
+          "disease_cure": "IPM for Sorghum"
+        }
+      ]
+    },
+    {
+      "crop_name": "Sugar Cane",
+      "crop_imageUrl": "https://fthmb.tqn.com/C06HC5JiZ0ReXgAr002TyPSv6Bs=/4288x2848/filters:fill(auto,1)/sugar-cane-56a8a7c83df78cf7729f6fb6.jpg",
+      "crop_description": "Sugarcane is grown in various kinds of soils, such as red volcanic soils and alluvial soils of rivers. The ideal soil is a mixture of sand, silt, and clay particles, with a measure of organic material. The land is plowed  and left to weather for a time before subsoiling (stirring up the subsoil) is carried out. The crop demands a well-drained soil, and drains—on the surface, underground, or both—are provided according to the topographic conditions of the fields.",
+      "crop_soil": [
+        {
+          "soil_name": "Black Soil",
+          "soil_description": "Black cotton soil containing a small percentage of lime in a very powdered state is known as kali. In different places kali soil bears different names such as chikni meaning sticky soil, gaohari, wheat soil, etc. Black soil is also known as medium and deep soil. It is the richest soil in the district which is fine-grained and retentive of moisture"
+        },
+        {
+          "soil_name": "Morand Soil",
+          "soil_description": "When there is a higher percentage of lime than in the kali soil, present in the form of nodules about as large as peas, the black cotton soil is known as morand. It is the most predominant and the most common soil inasmuch as it occupies about 66 per cent of the cultivated area in the district. It is black and grey or dark to light brown in colour, its depth varying between 0.915 and 1.220 metres (3-4 feet) and 2.440 to 3.050 metres (8.10 feet). It is clayey in texture, the clay content being about 56 per cent. Its sand content (about 16 per cent) is much more than that of black soil."
+        }
+      ],
+      "crop_diseases": [
+        {
+          "disease_name": "Smut ",
+          "disease_description": "Sugarcane is grown in various kinds of soils, such as red volcanic soils and alluvial soils of rivers. The ideal soil is a mixture of sand, silt, and clay particles, with a measure of organic material. The land is plowed  and left to weather for a time before subsoiling (stirring up the subsoil) is carried out. The crop demands a well-drained soil, and drains—on the surface, underground, or both—are provided according to the topographic conditions of the fields.",
+          "disease_cure": "reated Steam Therapy (AST) at 50 ºC"
+        },
+        {
+          "disease_name": "Wilt ",
+          "disease_description": " The canes may wither in groups.The affected plants are stunted with yellowing and withering of crown leaves.",
+          "disease_cure": " Dipping the setts in 40 ppm of boron "
+        }
+      ]
+    }
+  ]
+}
