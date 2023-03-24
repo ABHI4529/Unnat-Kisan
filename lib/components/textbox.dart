@@ -35,8 +35,9 @@ class _TextFieldState extends State<ATextField> {
       keyboardType: widget.textInputType,
       decoration: InputDecoration(
           suffixIcon: widget.suffix,
-          suffixIconConstraints: BoxConstraints(minWidth: 50),
+          suffixIconConstraints: const BoxConstraints(minWidth: 50),
           prefix: widget.prefix,
+          isDense: true,
           filled: true,
           fillColor: Theme.of(context).colorScheme.primary.withAlpha(30),
           label: Text("${widget.header}")),

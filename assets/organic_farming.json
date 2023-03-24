@@ -1,0 +1,49 @@
+{
+  "organic_farming" : [
+    {
+      "farming_technique" : "Crop Rotation",
+      "ref_image" : "https://th.bing.com/th/id/OIP.4nBGlhptFTmoGyFe_jJmfgHaEK?pid=ImgDet&rs=1",
+      "farming_usage" : "Crop rotation is a farming technique where farmers do not cultivate the same crop on the same land every year; instead, they grow different crops in rotation to maintain the soil’s health. Crop rotation is a very beneficial farming technique that replenishes the soil naturally as different plants contribute different nutrients to the soil. This technique helps control pests, weeds, insects, etc. by disrupting their habitat."
+    },
+    {
+      "farming_technique" : "Green Manure",
+      "ref_image" : "https://th.bing.com/th/id/OIP.vm19OSJbpxm-71zMIaYt4AHaEx?pid=ImgDet&rs=1",
+      "farming_usage" : "Green manure means the dying plants that are uprooted and turned into the soil. These plants act as nutrients to the soil that helps to improve its fertility."
+    },
+    {
+      "farming_technique" : "Compost",
+      "ref_image" : "https://th.bing.com/th/id/R.8d0467cef6887aa51c0ceb82a96450ff?rik=qb8H4puofQV3Gg&riu=http%3a%2f%2fwww.gardeningknowhow.com%2fwp-content%2fuploads%2f2014%2f05%2fcompost-pile.jpg&ehk=RkTqf%2fFF%2bfgL9mXU%2b5jWp%2bfJNgYMy%2bG1r7n2oU5sQLw%3d&risl=&pid=ImgRaw&r=0",
+      "farming_usage" : "Compost is one of the best natural fertilizers used in organic farming. It is a recycled organic matter highly enriched with nutrients that enhance the soil quality and improve crop production."
+    },
+    {
+      "farming_technique" : "Crop diversity",
+      "ref_image" : "https://miro.medium.com/max/1498/1*slYGRuYYyK_llYKAwWX1tw.jpeg",
+      "farming_usage" : "A new practice named ‘Polyculture’ is in trend these days. In polyculture, a variety of crops can be cultivated simultaneously to fulfill the increasing demand for food items across the world. On the other hand, traditional farmers were used to practicing ‘monoculture’ where only one kind of crop was used to cultivate in a particular location. The polyculture farming method also helps to produce necessary soil microorganisms to boost up the production."
+    },
+    {
+      "farming_technique" : "Soil Management",
+      "ref_image" : "https://th.bing.com/th/id/R.f091f296d931575078a2271d650ac699?rik=fpBxMBiGh%2fD9pA&riu=http%3a%2f%2fpro-soil.com%2fwp-content%2fuploads%2fsoil-management.jpg&ehk=t3wpbSeq59JE2yGPlmqOdcOC2Im84z3ngy3c01lP%2fC8%3d&risl=&pid=ImgRaw&r=0",
+      "farming_usage" : "Soil is the primary requirement of cultivation. The soil depletes its quality as it loses its nutrients after the cultivation of crops. Hence, soil management is crucial to recharge the soil with the necessary nutrients. The main objective of organic farming is to increase soil quality by using natural ways. That is why organic farming focuses on using bacteria (present in animal waste) that help to increase the nutrients level in the soil, making it fertile for more production."
+    },
+    {
+      "farming_technique" : "Controlling Pests Biologically",
+      "ref_image" : "https://image.slidesharecdn.com/ppt-unitiii-bio-control-170217180034/95/biological-control-of-forest-insect-pests-1-638.jpg?cb=1487354512",
+      "farming_usage" : "Agricultural lands are a home for many organisms. Some of these organisms are helpful for crop production, whereas others are quite harmful to the crop as they disrupt crop production. Also, we need to control the growth and population of the harmful organisms to maintain the soil fertility and protection of the crops. Hence, organic farmers can use mild (having fewer chemicals) or natural herbicides and pesticides to control pests biologically. The farmers can also sanitize the farm properly to control harmful organisms in the field."
+    },
+    {
+      "farming_technique" : "Weed Management",
+      "ref_image" : "https://th.bing.com/th/id/OIP.l_B3i-Wcbhn839bh9qvE9gHaFj?pid=ImgDet&rs=1",
+      "farming_usage" : "Weeds or wild grass are unnecessary plants that grow along with the crops in agricultural fields. These weeds suck most of the nutrients available in the soil and thus affect crop production. Organic farming methods aim to reduce the growth of weeds instead of eradicating it. Mulching, mowing or cutting are two techniques mainly we use for weed management in organic farming. In mulching, the farmers use plant residue or plastic films on the soil surface to block the growth of weeds. On the other hand, mowing or cutting is a process that works on the removal of weeds to minimize its growth in the field. Thus, weed management techniques help to improve the growth of the crop."
+    },
+    {
+      "farming_technique" : "Livestock",
+      "ref_image" : "https://th.bing.com/th/id/OIP.JRscFD4oAWnCCFDlmEQckAHaE8?pid=ImgDet&rs=1",
+      "farming_usage" : "Organic farming induces domestic animals to use to increase the sustainability of agricultural land."
+    },
+    {
+      "farming_technique" : "Genetic Modification",
+      "ref_image" : "https://www.scienceabc.com/wp-content/uploads/2016/04/Fotolia_79547359_Subscription_Monthly_M.jpg",
+      "farming_usage" : "Methods of organic farming focus mainly on enhancing crop production and soil quality through natural ways. Hence, we should keep genetic modification away from the field of organic farming. However, it must be noted that the pollens in modified crops are also present in the seed stocks that have been used for organic farming. As a result, it becomes very tough to keep organic farming completely away from genetic modification. Nowadays, agricultural activities are more involved in the use of chemicals to increase the production level to meet the world’s demand for food. The chemical we use in the form of fertilizers and pesticides eventually dissolve into water streams and also penetrate deep inside the soil. All this leads to an increased level of pollution, whether it is soil pollution or water pollution."
+    }
+  ]
+}

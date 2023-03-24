@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:unnatkisan/crops_screen/crops.dart';
+import 'package:unnatkisan/screens/equipment_screen/equipment.dart';
+import 'package:unnatkisan/screens/farming_screen/organic_farming.dart';
+import 'package:unnatkisan/screens/market_screen/market_prices.dart';
+import 'package:unnatkisan/screens/profile_screen/profile.dart';
+import 'package:unnatkisan/screens/schemes_screen/schemes.dart';
 import 'package:unnatkisan/screens/search_screen/community.dart';
 
 class HomeStruct extends StatefulWidget {
@@ -37,12 +44,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: [
-        Dashboard(),
-        Community(),
-        Text("In Progress"),
-        Text("In Progress")
-      ][_selected],
+      body: [Dashboard(), Community(), Schemes(), Profile()][_selected],
       bottomNavigationBar: NavigationBar(
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home_filled), label: "Home"),
@@ -75,6 +77,7 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const Text("Hey, Username"),
         actions: [
           TextButton(
@@ -147,6 +150,111 @@ class _DashboardState extends State<Dashboard> {
                       ),
                     )
                   ],
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.only(top: 20),
+                child: GridView(
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                      maxCrossAxisExtent: 200,
+                      crossAxisSpacing: 10,
+                      mainAxisSpacing: 10),
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Equipment()));
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color(0xff4C7845).withAlpha(70)),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: const [
+                            Icon(Icons.agriculture),
+                            Text("Advance Equipment")
+                          ],
+                        ),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => OrganicFarming()));
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color(0xff4C7845).withAlpha(70)),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: const [
+                            Icon(Iconsax.hospital),
+                            Text("Oragnic Farming")
+                          ],
+                        ),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MarketPrices()));
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color(0xff4C7845).withAlpha(70)),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: const [
+                            Icon(Iconsax.shop),
+                            Text("Market Pricing")
+                          ],
+                        ),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Schemes()));
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color(0xff4C7845).withAlpha(70)),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: const [
+                            Icon(Iconsax.shield_search),
+                            Text("Goverment Schemes")
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.only(top: 10),
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: const Color(0xff4C7845).withAlpha(70)),
+                child: Row(
+                  children: [Text("Weather will be here")],
                 ),
               )
             ],

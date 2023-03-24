@@ -1,0 +1,81 @@
+{
+  "equipments":[
+    {
+      "product_name" : "Stroke Sprayer Pump (Agricultural Sprayer)",
+      "price_range" : "Rs. 9,000 – Rs. 22,000",
+      "product_usage" : "",
+      "product_imageUrl" : "https://5.imimg.com/data5/VP/NA/MY-27634434/agriculture-power-sprayer-pump-2-stroke.jpg",
+      "benefits":[
+        "easily spray insecticides on crops",
+        "convenient and budget-friendly"
+      ]
+    },
+    {
+      "product_name" : "Combine Harvester",
+      "price_range" : "Rs. 24.5 lakh to Rs. 28 lakh",
+      "product_usage" : "Used for the processes of farming such as reaping, threshing, and winnowing.",
+      "product_imageUrl" : "https://i.pinimg.com/originals/5d/d7/08/5dd70835a4e7fd9c1ad8c3bc4ded7635.jpg",
+      "benefits":[
+        "best machine that is used to harvest all types of crops like barley, wheat, rye, oats, corn, and much more",
+        "It is very useful where labor scarcity is an issue",
+        "Combine harvester provides cleaner grains by effectively separating weeds from grain.",
+        "The farm can be prepared easily in shorter time for the next crop.",
+        "Farmers can save the overall cost of harvesting from cutting to winnowing.",
+        "It reduces dependency on the human labour.",
+        "Saves crops from getting damaged by natural disasters.",
+        "Reduces the production costs but also improves labor efficiency"
+      ]
+    },
+    {
+      "product_name" : "Roto Seed Drill",
+      "product_usage" : "It is used in almost all over India for the purpose of sowing seeds of wheat, barley, grass seeding.",
+      "price_range" : "Rs. 1.4 lakh to Rs. 1.37 lakh",
+      "product_imageUrl" : "https://th.bing.com/th/id/OIP.FfbKuBoKLdhp03VfbeTQmgHaF9?pid=ImgDet&rs=1",
+      "benefits":[
+        "Saves plenty of time",
+        "Works proficiently even in challenging situations",
+        "Seed Drills are Cost-effective",
+        "Environmental- friendly",
+        "Offers best possible results"
+      ]
+    },
+    {
+      "product_name" : "Manure Spreader",
+      "price_range" : "Rs. 55,000* to Rs. 5.00 lakh",
+      "product_usage" : " In agriculture purposes, its main work is to distribute manure in a field as in a form of fertilizer. It is not working on its own engine but it is towed behind a tractor.",
+      "product_imageUrl" : "https://th.bing.com/th/id/OIP.S_k5Pc2wvi1oSyGjvinFKwHaFj?pid=ImgDet&rs=1",
+      "benefits":[
+        "Save Time ,Save Effort",
+        "Less Hassle",
+        "More Time to Enjoy Life"
+      ]
+    },
+    {
+      "product_name" : "Rotary Tiller",
+      "price_range" : " Rs. 49,900 to Rs. 1.25 lakh",
+      "product_usage" : "A Rotary Tiller is an important farming machine to perform all the activities of agriculture and using this farmer can easily increase their farming activities is the simplest way. It has curved tines that are connected to a rotating shaft to dig the soil and make it ready for planting.",
+      "product_imageUrl" : "https://th.bing.com/th/id/OIP.qLzlWbybOzIPeQenTmcjVwHaE8?pid=ImgDet&rs=1",
+      "benefits":[
+        "Using the rotavator is an effective way to reduce the amount of time and effort it takes to prepare the soil with the best results.",
+        "Preparing seedbed with a rotary tiller is more cost-effective and provides for greater profit opportunities reducing maintenance costs for farmers.",
+        "Rotary tillers are also best suitable for weed removal in specific areas where chemicals cannot be used, either because of established plants or regulatory constraints.",
+        "It also works in heavy rainfall affected areas or irrigation to re-condition crusted soil and dirt.",
+        "It works way to mix compost and soil conditioner into the ground."
+      ]
+    },
+    {
+      "product_name" : "Trailer sprayer",
+      "price_range" : "Rs.1,00,000 to Rs. 3.00 lakh",
+      "product_usage" : "It is a versatile and productive tool for your pest or weed control business. It can be used in a variety of pest and weed control applications, from residential gardens to commercial spaces, and is perfect for spraying weed-killer, insecticides, fungicides, and other liquid treatments.",
+      "product_imageUrl" : "https://th.bing.com/th/id/OIP.dKHNEU2BNTEUaTkCtRvmBgHaHa?pid=ImgDet&rs=1",
+      "benefits":[
+         "You Have Options When Needed",
+        "You Can Better Deal With Emergencies",
+        "You Have More Space for Your Equipment",
+        "You Get to Save Your Personal Truck",
+        "You Enjoy More Flexibility When Placing Equipment",
+        "You Save Your Personal Truck from Serious Depreciation"
+      ]
+    }
+  ]
+}

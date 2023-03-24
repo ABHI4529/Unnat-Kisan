@@ -1,0 +1,58 @@
+{
+  "market_prices":[
+    {
+      "crop_name" : "Cotton",
+      "variety" : "Desi",
+      "maximum_price" : "7750",
+      "average_price" : "7650",
+      "minimum_price" : "7400",
+      "last_update" : "20th March 2023",
+      "status" : true
+    },
+    {
+      "crop_name" : "Soyabean",
+      "variety" : "Yellow",
+      "maximum_price" : "5250",
+      "average_price" : "5100",
+      "minimum_price" : "4000",
+      "last_update" : "17th March 2023",
+      "status" : true
+    },
+    {
+      "crop_name" : "Rice",
+      "variety" : "Other",
+      "maximum_price" : "4500",
+      "average_price" : "4200",
+      "minimum_price" : "2500",
+      "last_update" : "16th March 2023",
+      "status" : true
+    },
+    {
+      "crop_name" : "Wheat",
+      "variety" : "Other",
+      "maximum_price" : "2700",
+      "average_price" : "2400",
+      "minimum_price" : "2000",
+      "last_update" : "16th March 2023",
+      "status" : true
+    },
+    {
+      "crop_name" : "Arhar (Tur)",
+      "variety" : "Other",
+      "maximum_price" : "7700",
+      "average_price" : "7500",
+      "minimum_price" : "6000",
+      "last_update" : "11th March 2023",
+      "status" : true
+    },
+    {
+      "crop_name" : "Corriander",
+      "variety" : "Other",
+      "maximum_price" : "5740",
+      "average_price" : "5500",
+      "minimum_price" : "5200",
+      "last_update" : "11th March 2023",
+      "status" : true
+    }
+  ]
+}
