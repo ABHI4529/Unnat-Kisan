@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:fluent_ui/fluent_ui.dart' as ft;
 import 'package:flutter/services.dart';
 import 'package:otp_text_field/otp_field.dart';
@@ -10,6 +12,8 @@ import 'package:flutter/material.dart';
 import 'package:unnatkisan/screens/home_screen/home.dart';
 import 'package:unnatkisan/screens/signup_screen/signup.dart';
 
+import '../../firebase_options.dart';
+
 class Login extends StatefulWidget {
   const Login({super.key});
 
@@ -18,7 +22,9 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  void openOTPDialog() {
+  final smsController = TextEditingController();
+  Future<String> openOTPDialog(Function callback) async {
+    String smsCode = "";
     showDialog(
         context: context,
         builder: (context) {
@@ -36,13 +42,10 @@ class _LoginState extends State<Login> {
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
-                    OTPTextField(
-                      length: 4,
-                      width: double.maxFinite,
-                      fieldWidth: 50,
-                      fieldStyle: FieldStyle.box,
-                      otpFieldStyle: OtpFieldStyle(
-                          backgroundColor: Colors.grey.withOpacity(0.1)),
+                    ATextField(
+                      header: "Enter OTP",
+                      controller: smsController,
+                      textInputType: TextInputType.number,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -53,7 +56,7 @@ class _LoginState extends State<Login> {
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            child: const Text("Cancled"),
+                            child: const Text("Cancle"),
                           ),
                         ),
                         SizedBox(
@@ -65,10 +68,7 @@ class _LoginState extends State<Login> {
                                           (states) => const Color(0xff4C7845))),
                               child: const Text("Next"),
                               onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Home()));
+                                callback();
                               }),
                         )
                       ],
@@ -79,6 +79,46 @@ class _LoginState extends State<Login> {
             ),
           );
         });
+    return smsController.text;
+  }
+
+  void signInWithPhone() async {
+    if (_phoneNumber.text.isEmpty || _phoneNumber.text.length != 10) {
+      debugPrint("Invalid Number");
+    } else {
+      debugPrint("+91${_phoneNumber.text}");
+      FirebaseAuth auth = FirebaseAuth.instance;
+      await auth.verifyPhoneNumber(
+          phoneNumber: "+91${_phoneNumber.text}",
+          verificationCompleted: (creds) async {
+            await auth.signInWithCredential(creds).then((value) =>
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Home())));
+          },
+          verificationFailed: (fail) {
+            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+              behavior: SnackBarBehavior.floating,
+              content: Text("Verification Failed - ${fail.code}"),
+            ));
+          },
+          codeSent: (id, resendToken) async {
+            openOTPDialog(() async {
+              PhoneAuthCredential credential = PhoneAuthProvider.credential(
+                  verificationId: id, smsCode: smsController.text);
+              await auth
+                  .signInWithCredential(credential)
+                  .then((value) => Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => SignUp(
+                                phoneNumber: smsController.text,
+                              ))));
+            });
+          },
+          codeAutoRetrievalTimeout: (verificationId) {
+            debugPrint(verificationId);
+          });
+    }
   }
 
   final _phoneNumber = TextEditingController();
@@ -138,25 +178,33 @@ class _LoginState extends State<Login> {
                       SizedBox(
                         width: 150,
                         height: 30,
-                        child: TextButton(
-                          style: ButtonStyle(
-                              backgroundColor:
-                                  MaterialStateProperty.resolveWith(
-                                      (states) => const Color(0xff4C7845))),
-                          onPressed: () {
-                            if (_phoneNumber.text.isEmpty ||
-                                _phoneNumber.text.length != 10) {
-                              debugPrint("Invalid Number");
-                            } else {
-                              openOTPDialog();
-                            }
-                          },
-                          child: const Center(
-                              child: Text(
-                            "Send OTP",
-                            style: TextStyle(color: Colors.white),
-                          )),
-                        ),
+                        child: FutureBuilder(
+                            future: Firebase.initializeApp(
+                                options:
+                                    DefaultFirebaseOptions.currentPlatform),
+                            builder: (context, snapshot) {
+                              if (!snapshot.hasData) {
+                                return const CircularProgressIndicator();
+                              } else if (snapshot.hasError) {
+                                return Text(
+                                    "Could not connect ${snapshot.error}");
+                              }
+                              return ElevatedButton(
+                                style: ButtonStyle(
+                                    backgroundColor:
+                                        MaterialStateProperty.resolveWith(
+                                            (states) =>
+                                                const Color(0xff4C7845))),
+                                onPressed: () async {
+                                  signInWithPhone();
+                                },
+                                child: const Center(
+                                    child: Text(
+                                  "Send OTP",
+                                  style: TextStyle(color: Colors.white),
+                                )),
+                              );
+                            }),
                       ),
                       Container(
                         height: 50,

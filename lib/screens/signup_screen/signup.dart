@@ -1,13 +1,19 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:unnatkisan/components/textbox.dart';
 import 'package:fluent_ui/fluent_ui.dart' as ft;
+import 'package:unnatkisan/model/client.dart';
 
 import '../../components/autosuggest.dart';
 import '../../utils/utilslists.dart';
 import '../home_screen/home.dart';
 
 class SignUp extends StatefulWidget {
-  const SignUp({super.key});
+  SignUp({super.key, this.phoneNumber});
+  String? phoneNumber;
 
   @override
   State<SignUp> createState() => _SignUpState();
@@ -15,13 +21,37 @@ class SignUp extends StatefulWidget {
 
 class _SignUpState extends State<SignUp> {
   List<String> filtercities = [];
+  final _nameController = TextEditingController();
+  final _mailController = TextEditingController();
+  final _phoneNumber = TextEditingController();
+  String _city = "";
+  final _ageController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
+    if (widget.phoneNumber == null) {
+      null;
+    } else {
+      setState(() {
+        _phoneNumber.text = widget.phoneNumber!;
+      });
+    }
     setState(() {
       filtercities = cities;
     });
+  }
+
+  Future saveclient() async {
+    final client = Client(
+        fullName: _nameController.text,
+        mailId: _mailController.text,
+        age: int.parse(_ageController.text),
+        city: _city,
+        phoneNumber: _phoneNumber.text);
+    final dir = await getApplicationDocumentsDirectory();
+    File file = File("${dir.path}/client.json");
+    file.writeAsStringSync(jsonEncode(client));
   }
 
   @override
@@ -48,6 +78,7 @@ class _SignUpState extends State<SignUp> {
                 margin: const EdgeInsets.symmetric(vertical: 5),
                 child: ATextField(
                   header: "Full Name",
+                  controller: _nameController,
                   suffix: const Icon(Icons.account_circle),
                 ),
               ),
@@ -55,6 +86,7 @@ class _SignUpState extends State<SignUp> {
                 margin: const EdgeInsets.symmetric(vertical: 5),
                 child: ATextField(
                   header: "Email ID",
+                  controller: _mailController,
                   suffix: const Icon(Icons.email),
                 ),
               ),
@@ -62,6 +94,8 @@ class _SignUpState extends State<SignUp> {
                 margin: const EdgeInsets.symmetric(vertical: 5),
                 child: ATextField(
                   header: "Phone Number",
+                  textInputType: TextInputType.phone,
+                  controller: _phoneNumber,
                   suffix: const Icon(Icons.phone),
                   prefix: Container(
                     padding: const EdgeInsets.only(left: 7, bottom: 2),
@@ -72,6 +106,11 @@ class _SignUpState extends State<SignUp> {
               Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: Autocomplete(
+                    onSelected: (value) {
+                      setState(() {
+                        _city = value;
+                      });
+                    },
                     optionsBuilder: (textEditingValue) {
                       if (textEditingValue.text.isNotEmpty) {
                         return filtercities = cities
@@ -100,7 +139,9 @@ class _SignUpState extends State<SignUp> {
                 children: [
                   Expanded(
                       child: ATextField(
+                    controller: _ageController,
                     suffix: const Icon(Icons.date_range),
+                    textInputType: TextInputType.number,
                     header: "Age",
                   )),
                   Expanded(child: Container()),
@@ -116,8 +157,8 @@ class _SignUpState extends State<SignUp> {
         width: 150,
         child: FloatingActionButton(
           onPressed: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Home()));
+            saveclient().then((value) => Navigator.pushReplacement(context,
+                MaterialPageRoute(builder: (context) => const Home())));
           },
           child: const Text("Save"),
         ),
