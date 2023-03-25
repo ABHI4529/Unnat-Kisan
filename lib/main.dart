@@ -37,7 +37,7 @@ class _MainThemeState extends State<MainTheme> {
           navigationBarTheme: NavigationBarThemeData(
               indicatorColor: const Color(0xff4C7845).withAlpha(100),
               backgroundColor: const Color(0xff4C7845).withAlpha(50))),
-      home: Home(),
+      home: Login(),
     );
   }
 }

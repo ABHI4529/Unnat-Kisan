@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:ionicons/ionicons.dart';
@@ -84,6 +85,29 @@ class _DashboardState extends State<Dashboard> {
     var userData = file.readAsStringSync();
     var client = Client.fromJson(jsonDecode(userData));
     return client;
+  }
+
+  Map<String, dynamic> weatherData = {
+    "main": {
+      "temp": 0,
+    },
+    "name": "",
+    "weather": [
+      {
+        "main": "",
+      }
+    ],
+  };
+
+  Future<Map<String, dynamic>> getWeather(String city) async {
+    var url =
+        "https://api.openweathermap.org/data/2.5/weather?q=$city&units=metric&appid=bda39e37cd4ec314ff479d12a3b320bb";
+    final uri = Uri.parse(url);
+    final response = await http.get(uri);
+    final data = response.body;
+    final jsonData = jsonDecode(data);
+    weatherData = jsonData;
+    return weatherData;
   }
 
   @override
@@ -180,6 +204,46 @@ class _DashboardState extends State<Dashboard> {
                         ],
                       ),
                     ),
+                    FutureBuilder(
+                        future: getWeather("${snapshot.data?.city}"),
+                        builder: (context, shots) {
+                          if (snapshot.hasError) {
+                            return const CircularProgressIndicator();
+                          }
+                          return Container(
+                            margin: const EdgeInsets.only(top: 10),
+                            padding: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                color: const Color(0xff4C7845).withAlpha(70)),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text(
+                                  "${shots.data?['main']['temp']}°C",
+                                  style: const TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                                Text(
+                                  "${shots.data?['name']}",
+                                  style: const TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                                Text(
+                                  "${shots.data?['weather'][0]['main']}",
+                                  style: const TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                )
+                              ],
+                            ),
+                          );
+                        }),
                     Container(
                       margin: const EdgeInsets.only(top: 20),
                       child: GridView(
@@ -278,16 +342,6 @@ class _DashboardState extends State<Dashboard> {
                         ],
                       ),
                     ),
-                    Container(
-                      margin: const EdgeInsets.only(top: 10),
-                      padding: const EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: const Color(0xff4C7845).withAlpha(70)),
-                      child: Row(
-                        children: [Text("Weather will be here")],
-                      ),
-                    )
                   ],
                 ),
               ),
