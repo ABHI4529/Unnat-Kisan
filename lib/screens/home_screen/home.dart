@@ -1,6 +1,6 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ionicons/ionicons.dart';
 import 'package:unnatkisan/crops_screen/crops.dart';
 import 'package:unnatkisan/screens/equipment_screen/equipment.dart';
 import 'package:unnatkisan/screens/farming_screen/organic_farming.dart';
@@ -8,6 +8,7 @@ import 'package:unnatkisan/screens/market_screen/market_prices.dart';
 import 'package:unnatkisan/screens/profile_screen/profile.dart';
 import 'package:unnatkisan/screens/schemes_screen/schemes.dart';
 import 'package:unnatkisan/screens/search_screen/community.dart';
+import 'package:http/http.dart' as http;
 
 class HomeStruct extends StatefulWidget {
   const HomeStruct({super.key});
@@ -73,6 +74,24 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
+  Map weatherData = {
+    "main": {
+      "temp": 0,
+    },
+    "name": "",
+    "weather": [
+      {
+        "main": "",
+      }
+    ],
+  };
+
+  @override
+  void initState() {
+    getWeather();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -254,7 +273,30 @@ class _DashboardState extends State<Dashboard> {
                     borderRadius: BorderRadius.circular(10),
                     color: const Color(0xff4C7845).withAlpha(70)),
                 child: Row(
-                  children: [Text("Weather will be here")],
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text(
+                      "${weatherData['main']['temp']}°C",
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    Text(
+                      "${weatherData['name']}",
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    Text(
+                      "${weatherData['weather'][0]['main']}",
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    )
+                  ],
                 ),
               )
             ],
@@ -262,5 +304,17 @@ class _DashboardState extends State<Dashboard> {
         ),
       ),
     );
+  }
+
+  Future getWeather() async {
+    const url =
+        "https://api.openweathermap.org/data/2.5/weather?q=nagpur&units=metric&appid=bda39e37cd4ec314ff479d12a3b320bb";
+    final uri = Uri.parse(url);
+    final response = await http.get(uri);
+    final data = response.body;
+    final jsonData = jsonDecode(data);
+    setState(() {
+      weatherData = jsonData;
+    });
   }
 }

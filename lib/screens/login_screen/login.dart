@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:fluent_ui/fluent_ui.dart' as ft;
 import 'package:flutter/services.dart';
 import 'package:otp_text_field/otp_field.dart';
