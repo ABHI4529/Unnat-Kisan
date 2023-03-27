@@ -13,21 +13,25 @@
       "crop_diseases": [
         {
           "disease_name": "Khaira disease of rice",
+          "disease_imageUrl" : "https://dehaat-kheti-prod.s3.amazonaws.com/django-summernote/2021-06-29/1a40158d-4f51-40ad-a27a-91bbeba8fa20.jpg",
           "disease_description": "Khaira disease of rice is caused by the deficiency of zinc. Khaira disease of rice is a physiological disorder. In this disease, the lower leaves of the plants start turning yellow and after that, brown spots appear on the leaves. In case of severe outbreak of the disease, the leaves start drying. Plant growth is stunted and tillering is reduced. Symptoms of khaira disease are seen more in high yielding varieties of paddy.",
           "disease_cure": "To avoid the problem of this disease, 25 kg zinc sulfate per hectare should be applied before transplanting at the time of preparation of the field.For the control of Khaira disease, spraying of 5 kg Zinc Sulfate and 2.5 kg Lime in 600-700 liters of water per hectare should be done when the initial symptoms of the disease appear.If the disease is still not under control, then 10 days after the first spray, the second spray should be done at the same rate."
         },
         {
           "disease_name": "Bacterial leaf blight ",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.uvUekpQDsRMtAnFiHfrkcQHaE9?pid=ImgDet&rs=1",
           "disease_description": "In this disease, long dry lesions begin to form from the tip of the leaf and move towards the central part of the leaf through the edge.Wavy spots appear on the edges of the leaves.In case of severe infestation of the disease, the entire leaf dries up",
           "disease_cure": "For the control of bacterial leaf blight, spray 75 grams of Agrimycin-100 and 500 grams of copper oxychloride in 700-800 liters of water per hectare.If Agrimycin-100 is not available, 100 g streptocycline can be used instead"
         },
         {
           "disease_name": "Tungro disease",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.7_ha1kxCI-mxT-y2its8uQHaFS?pid=ImgDet&rs=1",
           "disease_description": "Tungro disease of rice is caused by viruses called Rice tungro bacilliform virus RTBV and Rice tungro spherical virus RTSV.Where green leafhoppers are responsible for transmitting most diseases. Tungro disease affects the crop at all stages of growth but most commonly at the stage of vegetative growth.The growth of the plants affected by the disease is stunted and tillerings are also reduced.Older leaves begin to turn orange-yellow at the tips and extend down to the lower leaf portion.Flowering is delayed and small and weak panicles are also formed, which are dark brown in color.",
           "disease_cure": "Spray Thiamethoxam 25 WDG 100g/ha or Imidacloprid 17.8 SL 100ml/ha at 15 and 30 days after transplanting of paddy.Spray insecticide on the weeds of the bunds as well.To reduce the yellowing of leaves caused by disease,spraying can be done by mixing 2% urea solution with Mancozeb 2.5 g/liter solution."
         },
         {
           "disease_name": "Rice Blast",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.EJDgHY3GkANOl1_OITQJUAHaE8?pid=ImgDet&rs=1",
           "disease_description": "Rice blast is caused by a fungus called Magnaporthe grisea. Rice blast disease is also known as rotten neck and rice fever. This disease was first recorded in India in the year 1918. This disease is found in about 80 rice growing countries. In case of severe infestation of this disease, crop loss can be up to 70-80%.The disease affects the leaves, nodes and neck (base of the panicle) of the plant but the symptoms of the disease are more clearly visible on the leaves.",
           "disease_cure": "Use balanced amount of fertilizers, avoid excess Nitrogen.Sow disease-resistant varieties like IR-64, Pusa Basmati-1637, Pankaj, Jamuna, and Pantadhan-10.Seed should be sown after treating with Carbendazim 50% WP @ 2g/kg of seed.Spray the following chemicals when symptoms of the disease appear.Carbendazim 50 wp @500g/ha Or Tricyclazole 75 wp @500g/ha."
         }
@@ -46,16 +50,19 @@
       "crop_diseases": [
         {
           "disease_name": "Root rot",
+          "disease_imageUrl" : "https://th.bing.com/th/id/R.3e3abadea9053f5fd25c6c355e1fa7ac?rik=3UDryDBQQdQW0w&riu=http%3a%2f%2f3.bp.blogspot.com%2f-AlIxfEqPjHE%2fTp25b_Q380I%2fAAAAAAAAAdk%2frYzxmFBZdgo%2fs1600%2f12090_Pansy_2011.jpg&ehk=XO1D5buR%2fDp4XVDNykx%2fAUfxb0QjvPMlxuaAUvZZRcY%3d&risl=&pid=ImgRaw&r=0",
           "disease_description": "3 types of symptoms caused by the pathogen – Seedling disease, sore shin and root rot.Seedling stage- Germinated seedling affected by the fungus shows black lesions on hypocotyl Causes girdling of stem and death of affected seedling.Sore shin stage-Dark reddish-brown canker appears on stem near soil surface, later turning black.Drying of leaves and entire plant due to plant breakage at the collar region.Root rot-Bark of affected plant shreds and may extend above ground level.Dark brown sclerotia appears on the wood or on the shredded bark.Entire root system becomes rotted, plants dry and can be easily pulled out ",
           "disease_cure": "Vitavax powder 75% Fungicide \tCarboxin 37.5% + Thiram 37.5% DS Seed treatment : 3 gm/kg seed.Dhanustin Fungicide \tCarbendazim 50% WP \tDrenching: 0.5 - 0.75 gm/lit water."
         },
         {
           "disease_name": "Fusarium Wilt",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.jBCC80nlI1BncMOAdNW0ngHaE8?pid=ImgDet&rs=1",
           "disease_description": "Initially the symptoms appear as yellowing and browning of cotyledons and the base of petiole shows brown ring.It is followed by wilting and drying of the affected seedlings.Affected plant’s leaves loses turgidity, gradually turns brown, droops and finally drops off.Tap roots are usually stunted with a smaller number of lateral roots. ",
           "disease_cure": "Beneficial Lyophilized Microbes Consortia: 1.5 % \tMix 25-50 gm/lit of water and keep it in shade for 3-5 hr. Then mix it in 200 lit of water.Carbendazim 50% DF.Soil drenching: 2 gm/lit water "
         },
         {
           "disease_name": "Verticillium Wilt",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.VxDQsicKPa1a4huzLvLwSgHaE7?pid=ImgDet&rs=1",
           "disease_description": "It affects the crop in square and boll formation stages.Bronzing of veins followed by interveinal chlorosis, yellowing and scorching of leaves.Leaves exhibit drying of leaf margins and areas between veins",
           "disease_cure": "Treat the delinted seeds with Carboxin or Carbendazim at 4 g/kg.Remove and destroy the infected plant debris after deep ploughing in summer months (June-July).Apply heavy doses of farm yard manure or compost at 100t/ha.Follow crop rotation every 2 or 3 years. "
         }
@@ -74,21 +81,25 @@
       "crop_diseases": [
         {
           "disease_name": "Bacterial wilt",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.IiCsXX0xfzq7wDu-i98KlgHaE6?pid=ImgDet&rs=1",
           "disease_description": "pathogen also damages plants such as chili, tomato, tobacco and egg plant, as well as several species of weeds.The symptoms of bacterial wilt infection can be seen on all parts of infected plants.Infected plant begins to wilt, starting from the tips of the leaves or where the stems branch out, and then spreading to all parts of the plant.Leaves become yellow at their bases, then the whole plant wilts and dies. When stems are cut a brown colored ring will be visible.When a tuber is cut in half, black or brown rings will, however, be visible. If left for a while or squeezed, these rings will exude a thick white fluid.",
           "disease_cure": "Bacterial wilt pathogen can survive in soil (without a host for several seasons), water, seed tubers, potato plant remnants.The disease can spread from field to field or from plant to plant within field via infected seed, air, water, soil, farming tools, livestock and people.High temperature, soil moisture, low pH.The disease spread rapidly in the warmer temperatures in storage areas. Infected seed can also be a source of the disease in the field.Bacterial wilt can be controlled by exposing the seed tubers to hot air (112 ºF) with 75% relative humidity for 30 min."
         },
         {
           "disease_name": "Septoria leaf spot",
+          "disease_imageUrl" : "https://i0.wp.com/onvegetables.com/wp-content/uploads/2015/07/septoria-leafspot-on-tomato-leaf-rp-c.jpg?ssl=1",
           "disease_description": "Less vigorous plants are usually affected.Small, round to irregular spots with a grey center and dark margin on leaves.Spots usually start on lower leaves and gradually advance upwards.At later stage spots coalesce and leaves are blighted.Complete defoliation of affected leaves may take place.Stems and flowers are sometimes attacked.Fruits are rarely attacked.",
           "disease_cure": "Fungicide fentin is proven to be effective in controlling Septoria. In addition, biological controls such as copper sulfate can be integrated with other fungicides to further control the spread of disease by preventing germination of the pycnidia.Poor vigour of plants due to nutrient deficiency in late season.High humidity or persistent dew at 25 ºC.Moist weather with intermittent showers."
         },
         {
           "disease_name": "Late blight",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.vCrNUKDj1Z1zErHEMQzmCQHaFj?pid=ImgDet&rs=1",
           "disease_description": "This disease damages leaves, stems and tubers. Affected leaves appear blistered as if scalded by hot water and eventually rot and dry out.When drying out, leaves turn brown or black in color. When infections are still active, spots appear on the underside of leaves blanketed in what looks like flour.Affected stems begin to blacken from their tips, and eventually dry out.Severe infections cause all foliage to rot, dry out and fall to the ground, stems to dry out and plants to die.Affected tubers display dry brown-colored spots on their skins and flesh. This disease acts very quickly. If it is not controlled, infected plants will die within two or three days.",
           "disease_cure": "Favourable condition-High humidity.Low temperature and leaf wetness."
         },
         {
           "disease_name": "Common Scab",
+          "disease_imageUrl" : "https://th.bing.com/th/id/R.7d8f4210cc16e18ed175538e5252d78c?rik=M3PA8ynaGLjXEg&riu=http%3a%2f%2fwww.omafra.gov.on.ca%2fIPM%2fimages%2fpotatoes%2fdiseases%2fcommon-scab%2fpotato_common-scab_03_zoom.jpg&ehk=0c558aFt3IeNiURg0dRbH1A2NtDu6KIOZLOXtEZmwnY%3d&risl=&pid=ImgRaw&r=0",
           "disease_description": "Pathogen infects young developing tubers through the lenticels and occasionally through wounds.Symptoms of common potato scab are quite variable and are manifested on the surface of the potato tuber. The disease forms several types of cork-like lesions including surface.Damaged tubers have rough, cracked skin, with scab-like spots. Severe infections leave potato skins covered with rough black welts.Initial infections result in superficial reddish-brown spots on the surface of tubers. As the tubers grow, lesions expand, becoming corky and necrotic.",
           "disease_cure": "Disease is common in fields with low soil pH favoured by high soil moisture. Disease problems may be aggravated by excessive irrigation."
         }
@@ -107,16 +118,19 @@
       "crop_diseases": [
         {
           "disease_name": "Powdery  Mildew",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.5qxjtBNdAalLp34B94Iq3AHaFi?pid=ImgDet&rs=1",
           "disease_description": "Powdery mildew can easily be diagnosed by the white, powdery patches that form on the upper surface of leaves and stem.Greyish white powdery growth appears on the leaf, sheath, stem and floral parts.Powdery growth later become black lesion and cause drying of leaves and other parts.",
           "disease_cure": "The disease infects plants during periods of high humidity (not necessarily rain) and cool to moderate temperatures (20-21°C)."
         },
         {
           "disease_name": "Loose Smut",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.CpQVRpCa2-lXsqH7FNU-iQHaFB?pid=ImgDet&rs=1",
           "disease_description": "t is a seed borne disease; infection occurs during Loose Smut flowering through wind-borne spores.The infection remains dormant inside the otherwise healthy looking seed but the plants grown from such seeds bear infected inflorescence.At this time, infected heads emerge earlier than normal heads. The entire inflorescence is commonly affected and appears as a mass of olive-black spores, initially covered by a thin gray membrane.",
           "disease_cure": "Infection is favored by cool, humid conditions during flowering period of the host plant."
         },
         {
           "disease_name": "Brown Rust",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.yK4kmOnR1n2gYbhvOI1LsAHaEK?pid=ImgDet&rs=1",
           "disease_description": "The most common site for symptoms is on upper leaf blades, however, sheaths, glumes and awns may occasionally become infected and exhibit symptoms.The pustules are circular or slightly elliptical, smaller than those of stem rust, usually do not coalesce, and contain masses of orange to orange-brown Urediospores.",
           "disease_cure": "Temperatures of 20-25° C with free moisture (rain or dew) cause epidemics. Severe infection causes upto 30 percent yield losses."
         }
@@ -139,21 +153,25 @@
       "crop_diseases": [
         {
           "disease_name": "Giberrella stalk and ear rot",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.hwiUgt3ehTeHxamqemPEQQHaE-?pid=ImgDet&rs=1",
           "disease_description": "Plants wilting and leaves changing color from light to dull green; lower stalk turns straw yellow; internal stalk tissue breaks down; interior of stalk has a red discoloration; black fungal fruiting bodies may be visible on the stalk, often at internodes, and can be easily scraped off; if fungal infection affects the ears, it produces a red mold at the tips of the ear which spreads down; early infection may result in the ear being covered in pink mycelium which causes the corn husk to adhere to the ear.",
           "disease_cure": "Stressed plants are more susceptible to Gibberella - providing adequate fertilization and irrigation can help reduce incidence of disease; control insects, especially stem and ear borers; hybrids differ in their susceptibility to the disease and further information is required in order to develop specific control measures."
         },
         {
           "disease_name": "Bacterial stalk rot/soft rot",
+          "disease_imageUrl" : "https://bugwoodcloud.org/images/1536x1024/1524063.jpg",
           "disease_description": "Plants suddenly beginning to lodge (bend to lie along the ground) midway through season; one or more internodes above soil line turning brown, water-soaked, soft and slimy; tissue has foul odor and mushy appearance.",
           "disease_cure": "Plow all crop debris into soil in Fall; plant corn in well-draining soil to prevent waterlogged plants."
         },
         {
           "disease_name": "Corn earworm ",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.ykAAcBXkE_IHVE8CSStnqgHaFj?pid=ImgDet&rs=1",
           "disease_description": "Feeding damage to leaves, tassel and leaf whorls; preferred feeding site is the ear and insect produces extensive excrement at the tip of the ear; younger larvae feed on silks, severing them from the plant; young caterpillars are cream-white in color with a black head and black hairs; older larvae may be yellow-green to almost black in color with fine white lines along their body and black spots at the base of hairs; eggs are laid singly on both upper and lower leaf surfaces and are initially creamy white but develop a brown-red ring after 24 hours and darken prior to hatching.",
           "disease_cure": "Corn earworms are most problematic on sweet corn varieties and treatment should be applied at egg hatch; monitor plants for eggs and young larvae and also natural enemies that could be damaged by chemicals; Bacillus thuringiensis or Entrust SC may be applied to control insects on organically grown plants; appropriate chemical treatment may be required for control in commercial plantations."
         },
         {
           "disease_name": "Spider mites  ",
+          "disease_imageUrl" : "https://th.bing.com/th/id/R.69a9d9c34d289b9b8f42afc7534a8774?rik=YQ%2bqpsQRBPkpwQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-Zxf0r7vsMWE%2fUfEKI3k1GXI%2fAAAAAAAAJgs%2ffT1Xz411lOg%2fs1600%2fspider_mite_silk.jpg&ehk=wDywYgTvpo8mHKFzcNc8sjicwjHzkykewjsIAInqFWI%3d&risl=&pid=ImgRaw&r=0",
           "disease_description": "Leaves stippled with yellow; leaves may appear bronzed; webbing on underside of leaves; small kernel size; mites may be visible as tiny moving dots on the webs or underside of leaves, best viewed using a hand lens; usually not spotted until there are visible symptoms on the plant; leaves turn yellow and may drop from plant.",
           "disease_cure": "In the home garden, spraying plants with a strong jet of water can help reduce buildup of spider mite populations; if mites become problematic apply insecticidal soap to plants; certain chemical insecticides may actually increase mite populations by killing off natural enemies and promoting mite reproduction."
         }
@@ -176,21 +194,25 @@
       "crop_diseases": [
         {
           "disease_name": "Wilt",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.uNII13KTq-642S3ZFKPNqAHaFP?pid=ImgDet&rs=1",
           "disease_description": "Xylem gradually develops black streaks, dark purple bands appear on the stem surface plants extending upwards from the base. Main stem of such plants is split open, intensive blackening of the xylem can be seen. In humid weather, a pinkish mycelial growth is commonly observed the basal portions of the wilted plants. It may be seen in seedling, flowering & vegetative stage.",
           "disease_cure": "Uproot wilted plants,Grow resistant varieties like Amar, Azad, Asha (IPCL - 87119), Maruthi, C-11, BDN-1, BDN - 2, NP - 5, JKM - 189, C - 11, JKM - 7, BSMR - 853 & BSMR - 736 etc,Avoid over or under watering plants."
         },
         {
           "disease_name": "Sterility mosaic disease",
+          "disease_imageUrl" : "https://image.slidesharecdn.com/b-190714035114/95/pigeon-pea-sterility-mosaic-virus-11-638.jpg?cb=1563076465",
           "disease_description": "It is caused by mosaic virus & spread from plant to plant under field conditions through Eriophyid mite. Leaves become small and cluster near branch tips & reduced in size. Plants are pale green and bushy in appearance, without of flowers and pods. Diseas ed plants are usually in groups. It may be seen in Vegetative growth & Pre - flowers stage",
           "disease_cure": "Spray Fenazaquin 10 EC (Magister) @ 1 ml/lit er of water on 45 and 60 DAS, Rogue out the infected plants in the early stages of growth, Grow resistant varieties like Pusa - 885, Asha, Sharad (DA11), Narendra Arhar1, Bahar , BSMR - 853, BSMR 736, Rajeev Lochan, BDN - 708."
         },
         {
           "disease_name": "Phytophthora blight",
+          "disease_imageUrl" : "https://bugwoodcloud.org/images/1536x1024/1577784.jpg",
           "disease_description": " Foliage blight symptoms are circular or irregular water soaked lesions on leaves. The lesions on stems and branches increases rapidly, girdles, cracks and dries the stem. Infected stem and branches break easily in the wind.",
           "disease_cure": "Seed treated with Metalaxyl 35 WS @ 3 g/ kg of seed, Grow resistant varieties like ICPL 7916/ 12055/12114/12161, JKM - 189, JA - 4,Good drainage in the fields and the plants should be protected from stem injury, Crop rotation should be followed "
         },
         {
           "disease_name": "Alternaria blight",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.l-Rjy2fsx7XLWpodf-c7-QHaGB?pid=ImgDet&rs=1",
           "disease_description": " Symptoms appear on all aerial part of plants are small, circular, necrotic spots that develop quickly, forming typical concentric rings. The spots are initially light brown and later turn dark brown. In severe infection, defoliation and drying of infected leaves, branches and flower buds.",
           "disease_cure": "Spray the crop with Mancozeb 75 WP @ 2 g/liter or Carbendazim 50 WP @ 1g/liter of water, Grow resistant varieties like DA - 2, MA 128 - 1, MA 128 - 2, Cultivation of pigeonpea on ridges with proper drainage system and avoiding the sowing in heavy soil helpful in disease management;"
         }
@@ -213,21 +235,25 @@
       "crop_diseases": [
         {
           "disease_name": "Loose smut",
+          "disease_imageUrl" : "https://www.agric.wa.gov.au/sites/gateway/files/Barley%20loose%20smut%20Avondal%205.JPG",
           "disease_description": "The affected plants can be detected before the ears come out. They are shorter than the healthy plants with thinner stalks and marked tillering. The ears come out much earlier than the healthy. The glumes are hypertrophied and the earhead gives a loose appearance than healthy. The sorus is covered by a thin membrane which ruptures very early, exposing the spores even as the head emerges from the sheath.",
           "disease_cure": "Azospirillum with 12.5 kg of FYM "
         },
         {
           "disease_name": "Rust",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.hoFx5Yp_fGLzmnSemlAOWgHaEy?pid=ImgDet&rs=1",
           "disease_description": "Rust. The fungus affects the crop at all stages of growth. The first symptoms are small flecks on the lower leaves (purple, tan or red depending upon the cultivar). Pustules (uredosori) appear on both surfaces of leaf as purplish spots which rupture to release reddish powdery masses of uredospores.",
           "disease_cure": "hexaconazole (0.1%), difenconazole "
         },
         {
           "disease_name": "Ergot",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.EpA_9oJuQ--SnbWuq1BerQHaE8?pid=ImgDet&rs=1",
           "disease_description": " disease is confined to individual spikelets. The first symptom is the secretion of honey dew from infected florets. Under favourable conditions, long, straight or curved, cream to light brown, hard sclerotia develop. .",
           "disease_cure": " seeds with 5% salt solution  "
         },
         {
           "disease_name": "Sorghum downy mildew",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.6EqLB5Woe_EjSbRScYA4fAHaE8?pid=ImgDet&rs=1",
           "disease_description": "Key distinguishing symptoms include white downy growth on both surfaces of infected leaves and also shredding of the leaves. What should I look for? Look for chlorosis in seedlings or yellow-green to white stripes on leaves of older plants. .",
           "disease_cure": "IPM for Sorghum"
         }
@@ -250,11 +276,13 @@
       "crop_diseases": [
         {
           "disease_name": "Smut ",
+          "disease_imageUrl" : "https://th.bing.com/th/id/OIP.ld_OMsIQTvccZqLs6pEpeQHaHa?pid=ImgDet&rs=1",
           "disease_description": "Sugarcane is grown in various kinds of soils, such as red volcanic soils and alluvial soils of rivers. The ideal soil is a mixture of sand, silt, and clay particles, with a measure of organic material. The land is plowed  and left to weather for a time before subsoiling (stirring up the subsoil) is carried out. The crop demands a well-drained soil, and drains—on the surface, underground, or both—are provided according to the topographic conditions of the fields.",
           "disease_cure": "reated Steam Therapy (AST) at 50 ºC"
         },
         {
           "disease_name": "Wilt ",
+          "disease_imageUrl" : "https://www.gardeningknowhow.com/wp-content/uploads/2013/03/verticillium-wilt-of-sunflowers.jpg",
           "disease_description": " The canes may wither in groups.The affected plants are stunted with yellowing and withering of crown leaves.",
           "disease_cure": " Dipping the setts in 40 ppm of boron "
         }

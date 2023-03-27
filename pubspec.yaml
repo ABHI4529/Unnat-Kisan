@@ -22,6 +22,7 @@ dependencies:
   firebase_auth: ^4.3.0
   path_provider: ^2.0.14
   http: ^0.13.5
+  url_launcher: ^6.1.10
 
 dev_dependencies:
   flutter_test:
@@ -38,3 +39,4 @@ flutter:
     - assets\organic_farming.json
     - assets\equipments.json
     - assets\market_prices.json
+    - assets\unnat_kisan_logo.png

@@ -6,7 +6,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:unnatkisan/components/textbox.dart';
 import 'package:fluent_ui/fluent_ui.dart' as ft;
 import 'package:unnatkisan/model/client.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../components/autosuggest.dart';
 import '../../utils/utilslists.dart';
 import '../home_screen/home.dart';
@@ -156,9 +156,13 @@ class _SignUpState extends State<SignUp> {
       floatingActionButton: SizedBox(
         width: 150,
         child: FloatingActionButton(
-          onPressed: () {
-            saveclient().then((value) => Navigator.pushReplacement(context,
-                MaterialPageRoute(builder: (context) => const Home())));
+          onPressed: () async {
+            saveclient().then((value) async {
+              final preferences = await SharedPreferences.getInstance();
+              await preferences.setBool("isLoggedIn", true).then((value) =>
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => const Home())));
+            });
           },
           child: const Text("Save"),
         ),

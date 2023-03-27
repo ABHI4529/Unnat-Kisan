@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:unnatkisan/screens/home_screen/home.dart';
 import 'package:unnatkisan/screens/login_screen/login.dart';
 import 'package:unnatkisan/screens/signup_screen/signup.dart';
+import 'package:unnatkisan/screens/splash_screen/splashscreen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,7 +38,7 @@ class _MainThemeState extends State<MainTheme> {
           navigationBarTheme: NavigationBarThemeData(
               indicatorColor: const Color(0xff4C7845).withAlpha(100),
               backgroundColor: const Color(0xff4C7845).withAlpha(50))),
-      home: Login(),
+      home: SplashScreen(),
     );
   }
 }

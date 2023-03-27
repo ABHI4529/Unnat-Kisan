@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../model/crop.dart';
+
 class CropDetails extends StatefulWidget {
   CropDetails({super.key, this.header, this.data});
   String? header;
-  dynamic data;
+  Crops? data;
 
   @override
   State<CropDetails> createState() => _CropDetailsState();
@@ -29,14 +31,13 @@ class _CropDetailsState extends State<CropDetails> {
                     borderRadius: BorderRadius.circular(10),
                     image: DecorationImage(
                         fit: BoxFit.cover,
-                        image:
-                            NetworkImage("${widget.data['crop_imageUrl']}"))),
+                        image: NetworkImage("${widget.data?.cropImageUrl}"))),
               ),
               const SizedBox(
                 height: 10,
               ),
               Text(
-                widget.data['crop_description'],
+                "${widget.data?.cropDescription}",
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
@@ -62,7 +63,7 @@ class _CropDetailsState extends State<CropDetails> {
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
-                          children: List.from(widget.data['crop_soil'])
+                          children: widget.data!.cropSoil!
                               .map((e) => Container(
                                     height: 350,
                                     width: 280,
@@ -80,12 +81,12 @@ class _CropDetailsState extends State<CropDetails> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            "${e['soil_name']}",
+                                            "${e.soilName}",
                                             style: const TextStyle(
                                                 fontWeight: FontWeight.bold),
                                           ),
                                           Text(
-                                            "\n${e['soil_description']}",
+                                            "\n${e.soilDescription}",
                                             style: const TextStyle(),
                                           ),
                                         ],
@@ -118,7 +119,7 @@ class _CropDetailsState extends State<CropDetails> {
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
-                          children: List.from(widget.data['crop_diseases'])
+                          children: widget.data!.cropDiseases!
                               .map((e) => Container(
                                     width: 280,
                                     margin: const EdgeInsets.only(right: 10),
@@ -140,7 +141,7 @@ class _CropDetailsState extends State<CropDetails> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              "${e['disease_name']}",
+                                              "${e.diseaseName}",
                                               style: const TextStyle(
                                                   fontWeight: FontWeight.bold),
                                             ),
@@ -152,6 +153,10 @@ class _CropDetailsState extends State<CropDetails> {
                                               decoration: BoxDecoration(
                                                   borderRadius:
                                                       BorderRadius.circular(10),
+                                                  image: DecorationImage(
+                                                      fit: BoxFit.cover,
+                                                      image: NetworkImage(
+                                                          "${e.diseaseImageUrl}")),
                                                   color: Theme.of(context)
                                                       .colorScheme
                                                       .primary
@@ -171,10 +176,15 @@ class _CropDetailsState extends State<CropDetails> {
                                                     (context) =>
                                                         CupertinoActionSheet(
                                                           title: Text(
-                                                              "${e['disease_name']}"),
+                                                              "${e.diseaseName}"),
                                                           message: Column(
                                                             children: [
                                                               Container(
+                                                                margin:
+                                                                    const EdgeInsets
+                                                                            .only(
+                                                                        top:
+                                                                            10),
                                                                 width: double
                                                                     .maxFinite,
                                                                 height: 200,
@@ -182,6 +192,11 @@ class _CropDetailsState extends State<CropDetails> {
                                                                     borderRadius:
                                                                         BorderRadius.circular(
                                                                             10),
+                                                                    image: DecorationImage(
+                                                                        fit: BoxFit
+                                                                            .cover,
+                                                                        image: NetworkImage(
+                                                                            "${e.diseaseImageUrl}")),
                                                                     color: Theme.of(
                                                                             context)
                                                                         .colorScheme
@@ -190,11 +205,11 @@ class _CropDetailsState extends State<CropDetails> {
                                                                             90)),
                                                               ),
                                                               Text(
-                                                                  "\n${e['disease_description']}"),
+                                                                  "\n${e.diseaseCure}"),
                                                               const Text(
                                                                   "\nPossible Cures  - "),
                                                               Text(
-                                                                  "${e['disease_cure']}")
+                                                                  "${e.diseaseCure}")
                                                             ],
                                                           ),
                                                           actions: [

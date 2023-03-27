@@ -111,7 +111,7 @@ class _LoginState extends State<Login> {
                       context,
                       MaterialPageRoute(
                           builder: (context) => SignUp(
-                                phoneNumber: smsController.text,
+                                phoneNumber: _phoneNumber.text,
                               ))));
             });
           },

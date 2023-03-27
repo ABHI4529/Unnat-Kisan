@@ -1,19 +1,23 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:unnatkisan/crops_screen/crops.dart';
+import 'package:unnatkisan/screens/crops_screen/crops.dart';
 import 'package:unnatkisan/model/client.dart';
 import 'package:unnatkisan/screens/equipment_screen/equipment.dart';
 import 'package:unnatkisan/screens/farming_screen/organic_farming.dart';
 import 'package:unnatkisan/screens/market_screen/market_prices.dart';
 import 'package:unnatkisan/screens/profile_screen/profile.dart';
 import 'package:unnatkisan/screens/schemes_screen/schemes.dart';
-import 'package:unnatkisan/screens/search_screen/community.dart';
+import 'package:unnatkisan/screens/community_screen/community.dart';
+
+import '../../model/crop.dart';
+import '../crops_screen/crop_details.dart';
 
 class HomeStruct extends StatefulWidget {
   const HomeStruct({super.key});
@@ -99,15 +103,27 @@ class _DashboardState extends State<Dashboard> {
     ],
   };
 
+  List<Crops> userCrops = [];
+
+  Future<List<Crops>> getCrops() async {
+    final dir = await getApplicationDocumentsDirectory();
+    File file = File("${dir.path}/myCrops.json");
+    var data = file.readAsStringSync();
+    var _crop = Crop.fromJson(jsonDecode(data));
+    setState(() {
+      userCrops = _crop.crops!;
+    });
+    return _crop.crops!;
+  }
+
   Future<Map<String, dynamic>> getWeather(String city) async {
     var url =
-        "https://api.openweathermap.org/data/2.5/weather?q=$city&units=metric&appid=bda39e37cd4ec314ff479d12a3b320bb";
+        "http://api.weatherapi.com/v1/current.json?key=dde56a2f88804ad69b5125303232703&q=$city";
     final uri = Uri.parse(url);
     final response = await http.get(uri);
     final data = response.body;
     final jsonData = jsonDecode(data);
-    weatherData = jsonData;
-    return weatherData;
+    return jsonData;
   }
 
   @override
@@ -173,12 +189,116 @@ class _DashboardState extends State<Dashboard> {
                             scrollDirection: Axis.horizontal,
                             child: Row(
                               children: [
+                                FutureBuilder(
+                                  future: getCrops(),
+                                  builder: (context, snapshot) {
+                                    if (snapshot.hasError) {
+                                      return const Text("");
+                                    } else if (snapshot.data == null) {
+                                      return const Text("");
+                                    }
+                                    return Row(
+                                      children: snapshot.data!
+                                          .map(
+                                            (e) => GestureDetector(
+                                              onTap: () {
+                                                showCupertinoModalPopup(
+                                                    context: context,
+                                                    builder: (context) =>
+                                                        CupertinoActionSheet(
+                                                          title: Text(
+                                                              "${e.cropName}"),
+                                                          message: Column(
+                                                            children: [
+                                                              Container(
+                                                                margin:
+                                                                    const EdgeInsets
+                                                                            .only(
+                                                                        bottom:
+                                                                            10),
+                                                                height: 200,
+                                                                decoration: BoxDecoration(
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                            10),
+                                                                    image: DecorationImage(
+                                                                        fit: BoxFit
+                                                                            .cover,
+                                                                        image: NetworkImage(
+                                                                            "${e.cropImageUrl}"))),
+                                                              ),
+                                                              Text(
+                                                                  "${e.cropDescription}")
+                                                            ],
+                                                          ),
+                                                          actions: [
+                                                            CupertinoButton(
+                                                              onPressed: () {
+                                                                Navigator.push(
+                                                                    context,
+                                                                    MaterialPageRoute(
+                                                                        builder: (context) =>
+                                                                            CropDetails(
+                                                                              data: e,
+                                                                              header: "${e.cropName}",
+                                                                            )));
+                                                              },
+                                                              child: const Text(
+                                                                  "More Info"),
+                                                            ),
+                                                          ],
+                                                          cancelButton:
+                                                              CupertinoButton(
+                                                            onPressed: () {
+                                                              Navigator.pop(
+                                                                  context);
+                                                            },
+                                                            child: const Text(
+                                                                "Cancel"),
+                                                          ),
+                                                        ));
+                                              },
+                                              child: Container(
+                                                margin: const EdgeInsets.only(
+                                                    right: 10),
+                                                height: 130,
+                                                width: 130,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            10),
+                                                    color:
+                                                        const Color(0xff4C7845)
+                                                            .withAlpha(70)),
+                                                child: Column(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceEvenly,
+                                                  children: [
+                                                    CircleAvatar(
+                                                      radius: 35,
+                                                      backgroundImage:
+                                                          NetworkImage(
+                                                              "${e.cropImageUrl}"),
+                                                    ),
+                                                    Text("${e.cropName}")
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                          )
+                                          .toList(),
+                                    );
+                                  },
+                                ),
                                 GestureDetector(
                                   onTap: () {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => Crops()));
+                                            builder: (context) => Crops_Screen(
+                                                  selectedCrop: userCrops,
+                                                )));
                                   },
                                   child: Container(
                                     margin: const EdgeInsets.only(right: 10),
@@ -207,8 +327,14 @@ class _DashboardState extends State<Dashboard> {
                     FutureBuilder(
                         future: getWeather("${snapshot.data?.city}"),
                         builder: (context, shots) {
-                          if (snapshot.hasError) {
+                          if (shots.hasError) {
                             return const CircularProgressIndicator();
+                          } else if (shots.data == null) {
+                            return Container(
+                                padding: const EdgeInsets.all(20),
+                                alignment: Alignment.center,
+                                child: const CircularProgressIndicator());
+
                           }
                           return Container(
                             margin: const EdgeInsets.only(top: 10),
@@ -220,21 +346,21 @@ class _DashboardState extends State<Dashboard> {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Text(
-                                  "${shots.data?['main']['temp']}°C",
+                                  "${shots.data?['current']['temp_c']}°C",
                                   style: const TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
                                 Text(
-                                  "${shots.data?['name']}",
+                                  "${shots.data?['location']['name']}",
                                   style: const TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
                                 Text(
-                                  "${shots.data?['weather'][0]['main']}",
+                                  "${shots.data?['current']['condition']['text']}",
                                   style: const TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.w500,

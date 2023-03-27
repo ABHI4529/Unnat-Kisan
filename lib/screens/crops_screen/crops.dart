@@ -1,33 +1,56 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:unnatkisan/crops_screen/crop_details.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:unnatkisan/screens/crops_screen/crop_details.dart';
 
-class Crops extends StatefulWidget {
-  const Crops({super.key});
+import '../../model/crop.dart';
+
+class Crops_Screen extends StatefulWidget {
+  Crops_Screen({super.key, required this.selectedCrop});
+  List<Crops> selectedCrop;
 
   @override
-  State<Crops> createState() => _CropsState();
+  State<Crops_Screen> createState() => _CropsState();
 }
 
-class _CropsState extends State<Crops> {
-  List selectedCrops = [];
-  List crops = [];
+class _CropsState extends State<Crops_Screen> {
+  List<Crops> selectedCrops = [];
+  List<Crops> crops = [];
 
   Future getCrops() async {
     var data = await DefaultAssetBundle.of(context)
         .loadString("assets/Crop_Data.json");
     var result = jsonDecode(data);
+    var _crops = Crop.fromJson(result);
     setState(() {
-      crops = result['crops'];
+      crops = _crops.crops!;
     });
+  }
+
+  Future saveCrops() async {
+    final dir = await getApplicationDocumentsDirectory();
+    File file = File("${dir.path}/myCrops.json");
+    var myCrop = Crop(crops: selectedCrops);
+    file.writeAsStringSync(jsonEncode(myCrop));
+    Navigator.pop(context);
+    ScaffoldMessenger.of(context)
+        .showSnackBar(const SnackBar(content: Text("Crops Saved")));
   }
 
   @override
   void initState() {
     super.initState();
     getCrops();
+    if (widget.selectedCrop.isEmpty) {
+      null;
+    } else {
+      setState(() {
+        selectedCrops = widget.selectedCrop;
+      });
+    }
   }
 
   @override
@@ -91,12 +114,12 @@ class _CropsState extends State<Crops> {
                                     CircleAvatar(
                                       radius: 25,
                                       backgroundImage:
-                                          NetworkImage(e['crop_imageUrl']),
+                                          NetworkImage("${e.cropImageUrl}"),
                                     ),
                                     const SizedBox(
                                       height: 10,
                                     ),
-                                    Text(e['crop_name'])
+                                    Text("${e.cropName}")
                                   ],
                                 ),
                               ),
@@ -131,7 +154,7 @@ class _CropsState extends State<Crops> {
                                 showCupertinoModalPopup(
                                     context: context,
                                     builder: (context) => CupertinoActionSheet(
-                                          title: Text(e['crop_name']),
+                                          title: Text("${e.cropName}"),
                                           message: Column(
                                             children: [
                                               Container(
@@ -144,10 +167,10 @@ class _CropsState extends State<Crops> {
                                                             10),
                                                     image: DecorationImage(
                                                         fit: BoxFit.cover,
-                                                        image: NetworkImage(e[
-                                                            'crop_imageUrl']))),
+                                                        image: NetworkImage(
+                                                            "${e.cropImageUrl}"))),
                                               ),
-                                              Text(e['crop_description'])
+                                              Text("${e.cropDescription}")
                                             ],
                                           ),
                                           actions: [
@@ -159,8 +182,8 @@ class _CropsState extends State<Crops> {
                                                         builder: (context) =>
                                                             CropDetails(
                                                               data: e,
-                                                              header: e[
-                                                                  'crop_name'],
+                                                              header:
+                                                                  "${e.cropName}",
                                                             )));
                                               },
                                               child: const Text("More Info"),
@@ -200,9 +223,9 @@ class _CropsState extends State<Crops> {
                                     CircleAvatar(
                                       radius: 50,
                                       backgroundImage:
-                                          NetworkImage(e['crop_imageUrl']),
+                                          NetworkImage("${e.cropImageUrl}"),
                                     ),
-                                    Text(e['crop_name'])
+                                    Text("${e.cropName}")
                                   ],
                                 ),
                               ),
@@ -224,7 +247,9 @@ class _CropsState extends State<Crops> {
       floatingActionButton: SizedBox(
         width: 150,
         child: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            saveCrops();
+          },
           child: const Text("Done"),
         ),
       ),

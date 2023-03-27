@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Schemes extends StatefulWidget {
   const Schemes({super.key});
@@ -80,6 +81,11 @@ class _SchemesState extends State<Schemes> {
                                             ],
                                           ),
                                           actions: [
+                                            CupertinoButton(
+                                                child: const Text("Apply"),
+                                                onPressed: () async {
+                                                  await launch("${e['scheme_apply']}");
+                                                }),
                                             CupertinoButton(
                                                 child: const Text("Done"),
                                                 onPressed: () {
