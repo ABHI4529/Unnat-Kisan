@@ -1,0 +1,59 @@
+
+
+
+{
+  "myths":[
+    {
+      "myth" : "Accidental exposures to pesticide spray drift kill farmers.",
+      "fact" : "Pesticides are sprayed diluted with water. The water content would be as high as 99% in the pesticide spray when applied to the crops. Accidental short exposures to such pesticide spray drift would not deliver lethal dose to the body of the sprayman. Of course, it is always recommended that such exposures are avoided."
+      
+    },
+    {
+      "myth" : "Organic and bio-pesticides are safer than chemical pesticides.",
+      "fact" : "All substances used as pesticides, whether organic, bio or synthetic undergo the same toxicity, safety and efficacy assessments before allowed for commercial introduction.Crop protection industry in fact offers a variety of pesticide products – organic, bio and synthetic – to farmers enabling a diverse and inclusive approach to pest control."
+      
+    },
+    {
+      "myth" : "Indian Agriculture is on a Permanent Decline",
+      "fact" : "India rank 2nd in the world in agriculture production. India’s world rank in services and industry sector is 9th and 5th respectively. Indian agricultural production has increased from 101 USD bn to 481 USD bn in the past 20 years (8% annual growth from 2000 to 2020).Globally India ranks 9th for the agricultural exports."
+      
+    },
+    {
+      "myth" : "Indian Agriculture is Heavily Dependent on Rainfall",
+      "fact" : "India agriculture is monsoon resilient thanks to major share of horticulture and livestock production that are round the year activity. Irrigated area in India (96mn ha) is the largest in the world. "
+      
+    },
+    {
+      "myth" : "Organic Farming Can Drive Sustainability of Indian Agriculture",
+      "fact" : "Globally, only 1.5% of the agricultural land is under organic agriculture. 100% organic farms are not a sustainable model since there is a high requirement of organic manure; whereas productivity is found to be much low. Sikkim which is claimed to be an entirely organic farming state, is heavily dependent on other states to feed its population."
+      
+    },
+    {
+      "myth" : "Farming Ruins Soil and Is Bad for the Environment",
+      "fact" : "Yes, farmers are always concerned about the current year’s harvest, but they take a (very) long view of food production. Their operations are businesses that don’t end after a single season. In fact, many farms in Kansas span multiple generations. Without taking care of the soil and implementing conservation practices, their businesses and the land they are built upon wouldn’t survive."
+      
+    },
+    {
+      "myth" : " Farming is traditional and low tech",
+      "fact" : "Self-driving cars are still out of reach for consumers, but tractors have been driving themselves around farms for years. And driving tractors isn’t the only role GPS plays on a farm. Farmers collect geospatial data to monitor variations across a field in soil type, water and nutrient use, temperature, crop yield and more. The average farmer on Farmer’s Business Network, a social media-like platform for farm analytics, collects about four million data points every year. Artificial intelligence helps sort through all this data and maximize performance within a field down to the square meter."
+      
+    },
+    {
+      "myth" : "Companies and governments are really “going green” .",
+      "fact" : "Companies and governments have been making empty promises to stop deforestation and restore forests for years, but until now, almost nothing has been done. Corporations like Cargill, Nestlé and Mondelez, and all other members of the Consumer Goods Forum, promised to clean deforestation from their supply chains by 2020. Well, it’s 2021 and we’re still seeing vast amounts of forests being wiped out to be turned into food commodities. Some of those same corporations endorsed the New York Declaration on Forests along with world leaders, aiming to cut deforestation in half also by 2020. Last year, NYDF released its assessment and, instead, found forest loss increased rather than halved. Yet, we see more and more companies with greenwashing ads and proposing false solutions such as carbon offsets, zero-deforestation, and net-zero carbon emission targets that are unrealistic ways to tackle the climate crisis accelerating  before our eyes."
+      
+    },
+    {
+      "myth" : " Large farms are more efficient",
+      "fact" : "Many high-volume industrial processes exhibit efficiencies at large scale that decrease inputs per unit of production. The more widgets you make, the more efficiently you can make each one. But agriculture is different. A 1989 National Research Council study concluded that “well-managed alternative farming systems nearly always use less synthetic chemical pesticides, fertilizers, and antibiotics per unit of production than conventional farms.And while mechanization can provide cost and labor efficiencies on large farms, bigger farms do not necessarily produce more food. According to a 1992 agricultural census report, small, diversified farms produce more than twice as much food per acre than large farms do."
+      
+    },
+    {
+      "myth" : "Conventional farming is necesssary to feed the world",
+      "fact" : "We’ve all heard proponents of conventional agriculture claim that organic farming is a recipe for global starvation because it produces lower yields. The most extensive yield comparison to date, a 2015 meta-analysis of 115 studies, found that organic production averaged almost 20 percent less than conventionally grown crops, a finding similar to those of prior studies."
+      
+    }
+
+    
+  ]
+}

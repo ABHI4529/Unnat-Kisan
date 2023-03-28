@@ -40,3 +40,5 @@ flutter:
     - assets\equipments.json
     - assets\market_prices.json
     - assets\unnat_kisan_logo.png
+    - assets\myths.json
+    - assets\chatbot.json

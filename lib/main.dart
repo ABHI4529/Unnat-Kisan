@@ -1,6 +1,10 @@
+//all rights reserved Abhinav Gadekar
+
+
 import 'package:flutter/material.dart';
 import 'package:unnatkisan/screens/home_screen/home.dart';
 import 'package:unnatkisan/screens/login_screen/login.dart';
+import 'package:unnatkisan/screens/myths/myths_screen.dart';
 import 'package:unnatkisan/screens/signup_screen/signup.dart';
 import 'package:unnatkisan/screens/splash_screen/splashscreen.dart';
 

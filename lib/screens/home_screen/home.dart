@@ -12,6 +12,7 @@ import 'package:unnatkisan/model/client.dart';
 import 'package:unnatkisan/screens/equipment_screen/equipment.dart';
 import 'package:unnatkisan/screens/farming_screen/organic_farming.dart';
 import 'package:unnatkisan/screens/market_screen/market_prices.dart';
+import 'package:unnatkisan/screens/myths/myths_screen.dart';
 import 'package:unnatkisan/screens/profile_screen/profile.dart';
 import 'package:unnatkisan/screens/schemes_screen/schemes.dart';
 import 'package:unnatkisan/screens/community_screen/community.dart';
@@ -54,13 +55,13 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: [Dashboard(), Community(), Schemes(), Profile()][_selected],
+      body: [Dashboard(), Community(), MythScreen(), Profile()][_selected],
       bottomNavigationBar: NavigationBar(
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home_filled), label: "Home"),
           NavigationDestination(
               icon: Icon(Icons.chat_bubble_rounded), label: "Community"),
-          NavigationDestination(icon: Icon(Icons.book), label: "Schemes"),
+          NavigationDestination(icon: Icon(Iconsax.shield_search), label: "Myths, Facts"),
           NavigationDestination(
               icon: Icon(Icons.account_box), label: "Profile"),
         ],
@@ -459,8 +460,8 @@ class _DashboardState extends State<Dashboard> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: const [
-                                  Icon(Iconsax.shield_search),
-                                  Text("Goverment Schemes")
+                                  Icon(Icons.newspaper),
+                                  Text("Government Schemes")
                                 ],
                               ),
                             ),

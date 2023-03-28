@@ -1,0 +1,66 @@
+{
+  "response": "Hello ! What can I help you with ?",
+  "solutions": [
+    {
+      "response": "What are the branches of agriculture",
+      "solutions": [
+        {
+          "response": "The different branches of agriculture are- horticulture, aquaculture, dairy farming, organic farming, poultry,sericulture, vermiculture, market, gardening, seed technology ,nematology plant breeding,genetics, soil science and agronomy"
+        }
+      ]
+    },
+    {
+      "response": "What are the methods of farming?",
+      "solutions": [
+        {
+          "response": "Crop rotation and diversity, growing cover crops ,reducing teenage ,considering integrated pest management, adopting integrated farming, following agroforestry practices ,managing the landscapes and the farming systems"
+        }
+      ]
+    },
+    {
+      "response": "Information about various types of Farming",
+      "solutions": [
+        {
+          "response": "Ley Farming",
+          "solutions": [
+            {
+              "response": "Farming is a very difficult in drylands because of water scarcity and lack of soil fertility ,so a method of farming was introduced to restore the fertility of the soil and was known as ley farming. In this method of farming ,grasses were grown in rotation with food grains to boost the nutrient level of the soil. It acts as an insurance against crop failures due to drought conditions."
+            }
+          ]
+        },
+        {
+          "response": "Contour Farming",
+          "solutions": [
+            {
+              "response": "The process of planting across a slope following its elevation contour lines.In this practice the ruts made by the plough are perpendicular to the slope rather than being parallel.Plants break the flow of water and prevent soil erosion,thereby making contour farming a sustainable way of farming."
+            }
+          ]
+        },
+        {
+          "response": "Hedgerow Intercropping",
+          "solutions": [
+            {
+              "response": "The practice of growing annual crops in between the rows of trees as an alternate method of fallow system is termed as hedge grow intercropping. The combination of trees and crops complement each other than competing .The trees create a favourable micro climate for the crops to survive by shielding them from drying winds."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response": "What crops can be directly seeded and what should be transplanted?",
+      "solutions": [
+        {
+          "response": "Generally,cereal crops such as rice, corn ,millets,sorghum;pulses (soyabean,peanut);large seeded vegetables(squash, melons); root vegetables,leafy vegetables are grown by direct seeding. Small seeded vegetables like eggplant ,tomato, pepper; fruit plants, ornamental plants,coconut plants and palm plants are cultivated using transplants. Vegetables like cabbage,mustard, lettuce etc.are generally grown in either ways:direct seeding or transplanting"
+        }
+      ]
+    },
+    {
+      "response": "What are the best management practices in agriculture?",
+      "solutions": [
+        {
+          "response": "Management practices help farmers conserve water and enhance production. Some typical practices include:Proper nutrient management to reduce impact on water resources, Improved irrigation by the use of best system to reduce wastage of water, Protection of water resources by using buffers"
+        }
+      ]
+    }
+  ]
+}
